@@ -3,7 +3,7 @@ date = "2017-06-26T18:27:58+01:00"
 title = "Editing EPUBs for NNELS"
 +++
 
-Welcome to **Cupper**: a documentation builder for inclusive designers and those trying to be inclusive designers. These are **Cupper's** docs, but they are also an example of a site built with **Cupper**. Here are some of its features:
+Welcome to **NNELS**: a documentation builder for inclusive designers and those trying to be inclusive designers. These are **NNELS's** docs, but they are also an example of a site built with **Cupper**. Here are some of its features:
 
 {{% ticks %}}
 * Built with [Hugo](https://gohugo.io/), so easy to structure content and fast to compile it
