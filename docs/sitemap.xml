@@ -6,6 +6,10 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/updating-to-epub3/</loc>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/another-tag/</loc>
     <priority>0</priority>
   </url>
@@ -26,10 +30,6 @@
   <url>
     <loc>https://flittle8.github.io/cupper/tags/example-tag/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://flittle8.github.io/cupper/patterns/pattern/</loc>
   </url>
   
   <url>

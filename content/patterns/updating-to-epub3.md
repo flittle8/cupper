@@ -1,6 +1,7 @@
 +++
-title = "My First Pattern File"
+title = "Updating EPUB 2 to EPUB 3"
 tags = ["example tag", "another tag"]
+weight = 2
 +++
 
 You can just write **markdown** here. But don't forget there are lots of shortcodes to help you with writing and showing off code too. See [the documentation for **Cupper**](https://thepaciellogroup.github.io/cupper/) for full details.

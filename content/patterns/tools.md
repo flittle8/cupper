@@ -26,3 +26,5 @@ Before we can start editing an EPUB, we need to download a few tools. Follow the
 {{% note %}}
 Once you've installed the plug-ins, you can run them in Sigil by going to Plugins > Edit > Pagelist, or Plugins > Output > ePub3-itizer.
 {{% /note %}}
+
+To get started with Sigil, turn to {{% pattern "Updating EPUB 2 to EPUB 3" %}}.
