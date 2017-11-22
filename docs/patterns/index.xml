@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Setup</title>
+      <link>https://flittle8.github.io/cupper/patterns/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/tools/</guid>
+      <description>Before we can start editing an EPUB, we need to download a few tools. Follow the links below to get started:
+ Sigil Sigil is an open source, multi-platform EPUB ebook editor. We&amp;rsquo;ll use Sigil to edit EPUBs. ePub3-itizer ePub3-itizer is a plug-in for Sigil that will convert an EPUB 2 into a EPUB 3. If you&amp;rsquo;re using a Mac, you&amp;rsquo;ll also need to download ActiveTcl for this plugin to work.</description>
+    </item>
+    
+    <item>
       <title>My First Pattern File</title>
       <link>https://flittle8.github.io/cupper/patterns/pattern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

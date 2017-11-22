@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://flittle8.github.io/cupper/patterns/">
+    <link rel="canonical" href="https://flittle8.github.io/cupper/patterns/tools/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://flittle8.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://flittle8.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://flittle8.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Editing EPUBs for NNELS
+        Setup | Editing EPUBs for NNELS
       
     </title>
     
@@ -162,7 +162,7 @@
                   <ul id="patterns-list">
                     
                       <li class="pattern">
-                        <a href="https://flittle8.github.io/cupper/patterns/tools/" >
+                        <a href="https://flittle8.github.io/cupper/patterns/tools/" aria-current="page">
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
                             <use xlink:href="#bookmark"></use>
                           </svg>
@@ -191,35 +191,74 @@
           
   <main id="main">
     <h1>
-      Patterns
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://flittle8.github.io/cupper/patterns/tools/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
       Setup
-    </a>
-  </h2>
-</li>
-
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://flittle8.github.io/cupper/tags/plugins">plugins</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://flittle8.github.io/cupper/tags/tools">tools</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
       
-          <li>
-  <h2>
-    <a href="https://flittle8.github.io/cupper/patterns/pattern/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      My First Pattern File
-    </a>
-  </h2>
-</li>
 
-      
-    </ul>
+
+    
+    
+
+<p>Before we can start editing an EPUB, we need to download a few tools. Follow the links below to get started:</p>
+
+<ol>
+<li><a href="https://github.com/Sigil-Ebook/Sigil/releases">Sigil</a>
+Sigil is an open source, multi-platform EPUB ebook editor. We&rsquo;ll use Sigil to edit EPUBs.</li>
+<li><a href="https://github.com/kevinhendricks/ePub3-itizer/tree/master/plugin">ePub3-itizer</a>
+ePub3-itizer is a plug-in for Sigil that will convert an EPUB 2 into a EPUB 3.
+If you&rsquo;re using a Mac, you&rsquo;ll also need to download <a href="https://www.activestate.com/activetcl/downloads">ActiveTcl</a> for this plugin to work.</li>
+<li><a href="http://www.mobileread.mobi/forums/showthread.php?t=265237">Pagelist</a>
+Pagelist is another plug-in for Sigil. This will help us generate pagelists from page numbers. <a href="https://flittle8.github.io/cupper/files/PageList_v0.1.2.zip">Download the zip file</a>(1.8 KB)</li>
+<li><a href="https://github.com/IDPF/epubcheck/releases">EPUB-Checker</a>
+EpubCheck is a tool to validate EPUB files. It can detect many types of errors in EPUB. We can use it to check the EPUB for errors as we work.</li>
+</ol>
+
+<h2 id="installing-plug-ins-in-sigil">Installing plug-ins in Sigil</h2>
+
+<ol>
+<li>Go to Plugins &gt; Manage Plugins in the menu bar</li>
+<li>Click &ldquo;Add Plugin&rdquo;</li>
+<li>Locate and select the zip file that you downloaded</li>
+<li>Click &ldquo;OK&rdquo;</li>
+</ol>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    <p>Once you&rsquo;ve installed the plug-ins, you can run them in Sigil by going to Plugins &gt; Edit &gt; Pagelist, or Plugins &gt; Output &gt; ePub3-itizer.</p>
+
+  </div>
+</aside>
+
+
   </main>
 
           <footer role="contentinfo">
