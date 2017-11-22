@@ -1,5 +1,5 @@
-languageCode = "en-us"
-title = "Cupper"
+languageCode = "en"
+title = "Editing EPUBs for NNELS"
 baseURL = "https://flittle8.github.io/cupper/"
 canonifyURLs = true
 theme = "cupper"
