@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Editing EPUBs for NNELS</title>
-    <link>https://flittle8.github.io/cupper/</link>
-    <description>Recent content on Editing EPUBs for NNELS</description>
+    <title>EPUB 2 to EPUB 3 on Editing EPUBs for NNELS</title>
+    <link>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/</link>
+    <description>Recent content in EPUB 2 to EPUB 3 on Editing EPUBs for NNELS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://flittle8.github.io/cupper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <description>This first step to editing an EPUB is to check what version of EPUB the book is. We want it to be an EPUB 3, and not an EPUB 2. If it&amp;rsquo;s an EPUB 2, then we need to upgrade it.
 Follow the steps below to check what version of EPUB you&amp;rsquo;re working with.
 Open the EPUB in Sigil There are very ways to do this: you can right-click on the EPUB and open with Sigil; you can open Sigil and then go to File &amp;gt; Open; you can open Sigil and press Command+O or ⌘O.</description>
-    </item>
-    
-    <item>
-      <title>Setup</title>
-      <link>https://flittle8.github.io/cupper/patterns/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://flittle8.github.io/cupper/patterns/setup/</guid>
-      <description>Before we can start editing an EPUB, we need to download a few tools. Follow the links below to get started:
- Sigil Sigil is an open source, multi-platform EPUB ebook editor. We&amp;rsquo;ll use Sigil to edit EPUBs. ePub3-itizer ePub3-itizer is a plug-in for Sigil that will convert an EPUB 2 into a EPUB 3. If you&amp;rsquo;re using a Mac, you&amp;rsquo;ll also need to download ActiveTcl for this plugin to work.</description>
     </item>
     
     <item>
@@ -48,24 +38,6 @@ Of course, as EPUB is reflowable (page-less), these pages correspond to pages in
       
       <guid>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-epub3/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>https://flittle8.github.io/cupper/patterns/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://flittle8.github.io/cupper/patterns/resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cupper</title>
-      <link>https://flittle8.github.io/cupper/print-version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://flittle8.github.io/cupper/print-version/</guid>
-      <description>You don&amp;rsquo;t want to edit this file :-)</description>
     </item>
     
   </channel>

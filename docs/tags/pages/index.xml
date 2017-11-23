@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plugins on Editing EPUBs for NNELS</title>
-    <link>https://flittle8.github.io/cupper/tags/plugins/</link>
-    <description>Recent content in Plugins on Editing EPUBs for NNELS</description>
+    <title>Pages on Editing EPUBs for NNELS</title>
+    <link>https://flittle8.github.io/cupper/tags/pages/</link>
+    <description>Recent content in Pages on Editing EPUBs for NNELS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://flittle8.github.io/cupper/tags/plugins/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://flittle8.github.io/cupper/tags/pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       <guid>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-pagelist/</guid>
       <description>Before we can convert this baby to an EPUB 3, we need to create what&amp;rsquo;s called a &amp;ldquo;Page list&amp;rdquo;. A page list is exactly what it sounds like - a list of all the pages (or, &amp;ldquo;page breaks&amp;rdquo;) in the book.
 Of course, as EPUB is reflowable (page-less), these pages correspond to pages in the print edition. Therefore the page list allows users in mixed print-digital environments, such as classrooms and book clubs, to coordinate their reading.</description>
-    </item>
-    
-    <item>
-      <title>Setup</title>
-      <link>https://flittle8.github.io/cupper/patterns/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://flittle8.github.io/cupper/patterns/setup/</guid>
-      <description>Before we can start editing an EPUB, we need to download a few tools. Follow the links below to get started:
- Sigil Sigil is an open source, multi-platform EPUB ebook editor. We&amp;rsquo;ll use Sigil to edit EPUBs. ePub3-itizer ePub3-itizer is a plug-in for Sigil that will convert an EPUB 2 into a EPUB 3. If you&amp;rsquo;re using a Mac, you&amp;rsquo;ll also need to download ActiveTcl for this plugin to work.</description>
     </item>
     
   </channel>
