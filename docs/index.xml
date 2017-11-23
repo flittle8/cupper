@@ -37,8 +37,8 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-pagelist/</guid>
-      <description>Before we can convert this baby to an EPUB 3, we need to create what&amp;rsquo;s called a &amp;ldquo;Page list&amp;rdquo;. A page list is exactly what it sounds like - a list of all the pages (or, &amp;ldquo;page breaks&amp;rdquo;) in the book.
-Of course, as EPUB is reflowable (page-less), these pages correspond to pages in the print edition. Therefore the page list allows users in mixed print-digital environments, such as classrooms and book clubs, to coordinate their reading.</description>
+      <description>Before we can convert to an EPUB 3, we need to create what&amp;rsquo;s called a &amp;ldquo;Page list&amp;rdquo;. A page list is exactly what it sounds like - a list of all the pages (or, &amp;ldquo;page breaks&amp;rdquo;) in the book. These pages correspond to pages in the print edition. As such, the page list allows users in mixed print-digital environments, like classrooms and book clubs, to coordinate their reading.
+To determine if we need to create a page list, follow the steps below.</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@ Of course, as EPUB is reflowable (page-less), these pages correspond to pages in
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/resources/</guid>
-      <description></description>
+      <description> Webpages  EPUB Specifications and Projects: A great list of EPUB resources  Videos    Free courses    </description>
     </item>
     
     <item>

@@ -276,6 +276,25 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
             Resources
           </h1>
           
+
+<h2 id="webpages">Webpages</h2>
+
+<ul>
+<li><a href="http://www.idpf.org/epub/dir/">EPUB Specifications and Projects</a>: A great list of EPUB resources</li>
+</ul>
+
+<h2 id="videos">Videos</h2>
+
+<ul>
+<li></li>
+</ul>
+
+<h2 id="free-courses">Free courses</h2>
+
+<ul>
+<li></li>
+</ul>
+
         </div>
       
       
@@ -314,7 +333,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
     <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
       <use xlink:href="#info"></use>
     </svg>
-    <p>You may ask, why EPUB 3? The short answer: it&rsquo;s more accessible. If you want to know more, a good primer on the topic is Laura Brady&rsquo;s <a href="http://epubsecrets.com/epub-2-or-epub-3-that-is-not-a-question.php">EPUB 2 or EPUB 3: That Is Not a Question</a>.</p>
+    <p>You may ask, why EPUB 3? The short answer: it&rsquo;s more accessible. If you want to know more, a couple good primers on the topic are Laura Brady&rsquo;s <a href="http://epubsecrets.com/epub-2-or-epub-3-that-is-not-a-question.php">EPUB 2 or EPUB 3: That Is Not a Question</a>, and EDRLab&rsquo;s <a href="https://www.edrlab.org/epub/epub2-vs-epub3/">EPUB 2 vs EPUB 3</a>.</p>
 
   </div>
 </aside>
@@ -333,9 +352,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
             </h1>
             
 
-<p>Before we can convert this baby to an EPUB 3, we need to create what&rsquo;s called a &ldquo;Page list&rdquo;. A page list is exactly what it sounds like - a list of all the pages (or, &ldquo;page breaks&rdquo;) in the book.</p>
-
-<p>Of course, as EPUB is reflowable (page-less), these pages correspond to pages in the print edition.  Therefore the page list allows users in mixed print-digital environments, such as classrooms and book clubs, to coordinate their reading.</p>
+<p>Before we can convert to an EPUB 3, we need to create what&rsquo;s called a &ldquo;Page list&rdquo;. A page list is exactly what it sounds like - a list of all the pages (or, &ldquo;page breaks&rdquo;) in the book. These pages correspond to pages in the print edition.  As such, the page list allows users in mixed print-digital environments, like classrooms and book clubs, to coordinate their reading.</p>
 
 <p>To determine if we need to create a page list, follow the steps below.</p>
 
@@ -405,7 +422,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     <h3>
   
-    <button aria-expanded="false" data-expands="js-expandable-4557b9a3cfc42534cfacb28ac756a32d">
+    <button aria-expanded="false" data-expands="js-expandable-db50c9466a544a308cb30042c13b5221">
       <span class="expandable-label">EPUB 3</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -417,8 +434,8 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     </h3>
   
-  <div id="js-expandable-4557b9a3cfc42534cfacb28ac756a32d" hidden>
-    <p>If you&rsquo;re working with an EPUB 3, the page list will be found in a XHTML navigation document, often named &ldquo;nav.xhtml&rdquo;. This file is specific to EPUB 3.</p>
+  <div id="js-expandable-db50c9466a544a308cb30042c13b5221" hidden>
+    <p>If you&rsquo;re working with an EPUB 3, the page list will be found in a XHTML navigation document. This files is often named &ldquo;nav.xhtml&rdquo; or contains the word &ldquo;nav&rdquo; in the filename. This file is specific to EPUB 3.</p>
 
 <p>Like the NCX in EPUB 2, this file contains all the navigational points in the book, which appear in the main navigation panel of reading systems. Most commonly this includes: Table of Contents, Landmarks, and, a Page List.</p>
 
@@ -428,9 +445,154 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
 
 <h2 id="check-if-page-breaks-exist">Check if page breaks exist</h2>
 
+<p>Sometimes page breaks exist in the book, but the publisher hasn&rsquo;t bothered to use them to create a page list. In this case, we can make use of those page breaks to generate a page list so that users can easily navigate to page numbers.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-38152582eb9bc33ac7712a4fdb7c6125">
+      <span class="expandable-label">EPUB 2</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-38152582eb9bc33ac7712a4fdb7c6125" hidden>
+    <p>In EPUB 2, page breaks are indicated by the a element, which defines a hyperlink. The exact formatting of what&rsquo;s inside the id attribute may vary (i.e. page126, page_126), but is nothing to worry about.</p>
+
+<pre><code class="language-html">&lt;a id=&quot;page126&quot;&gt;&lt;/a&gt;
+</code></pre>
+
+<p>Search the EPUB for this code. If you find page breaks, move on to <a href="#convert-the-page-breaks-into-EPUB-3-format">convert the page breaks into EPUB 3 format</a>.</p>
+
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-1ef44b95b9ac500bab3ebd79ec25eb0f">
+      <span class="expandable-label">EPUB 3</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-1ef44b95b9ac500bab3ebd79ec25eb0f" hidden>
+    <p>In EPUB 3, page breaks are indicated by the span element with an epub:type=&ldquo;pagebreak&rdquo;. Exact formatting may vary slightly. Below are the common ways to code the page breaks in EPUB 3:</p>
+
+<pre><code class="language-html">&lt;span epub:type=&quot;pagebreak&quot; id=&quot;page31&quot; title=&quot;31&quot;/&gt;
+</code></pre>
+
+<pre><code class="language-html">&lt;span epub:type=&quot;pagebreak&quot; id=&quot;page31&quot;&gt;31&lt;/span&gt;
+</code></pre>
+
+<p>Search the EPUB for this code. If you find page breaks, move on to <a href="#convert-the-page-breaks-into-EPUB-3-format">convert the page breaks into EPUB 3 format</a>.</p>
+
+  </div>
+</div>
+
+
 <h2 id="convert-the-page-breaks-into-epub-3-format">Convert the page breaks into EPUB 3 format</h2>
 
-<h2 id="run-the-pagelist-plug-in">Run the Pagelist plug-in</h2>
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-4e809324fe3f5349ee4ba8cabba32dfb">
+      <span class="expandable-label">EPUB 2</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-4e809324fe3f5349ee4ba8cabba32dfb" hidden>
+    <p>When working with EPUB 2, you need to convert the EPUB 2 page breaks into EPUB 3 page breaks. This is easy to do with some regex (or, &ldquo;regular expressions&rdquo;). Regex lets us do a bulk Find and Replace, and will become your editing friend.</p>
+
+<p>In Sigil, go to the Search menu bar and select &ldquo;Find and Replace&rdquo;, or simply press Command+F or ⌘+F. Then enter the below Find and Replace expressions:</p>
+
+<p>Find: <code>&lt;a id=&quot;page(\d+?)&quot;&gt;&lt;/a&gt;</code></p>
+
+<p>Replace: <code>&lt;span epub:type=&quot;pagebreak&quot; id=&quot;\1&quot;&gt;\1&lt;/span&gt;</code></p>
+
+<figure role="group" aria-describedby="caption-4cac2733dea6f823557f657734525f5c">
+  <p><img src="https://flittle8.github.io/cupper/images/epub2-epub3-pages-regex.png" alt="See the Find and Replace regex expressions above." /></p>
+
+  <figcaption id="caption-4cac2733dea6f823557f657734525f5c">
+    Sample regex for converting EPUB 2 page breaks into EPUB 3 page breaks
+  </figcaption>
+</figure>
+
+<p>Ensure &ldquo;regex&rdquo; and &ldquo;all HTML files&rdquo; are selected for the Mode. You may need to modify the regex slightly to capture the specific formatting used in the EPUB. When it all looks good, you can hit &ldquo;Replace All&rdquo;.</p>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    <p>There is plenty of information online to help you learn regex. Here&rsquo;s a <a href="http://www.rexegg.com/regex-quickstart.html#ref">regex cheatsheet</a> to get you started.</p>
+
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+<p><div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-8e13a754e241d16717e2328a0a8dd3ad">
+      <span class="expandable-label">EPUB 3</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-8e13a754e241d16717e2328a0a8dd3ad" hidden>
+    <p>When working with EPUB 3, you need to check that the page breaks are coded in one of the ways below. This will ensure that the Pagelist plug-in generates the page list.</p>
+
+<pre><code class="language-html">&lt;span epub:type=&quot;pagebreak&quot; id=&quot;page31&quot; title=&quot;31&quot;/&gt;
+</code></pre>
+
+<pre><code class="language-html">&lt;span epub:type=&quot;pagebreak&quot; id=&quot;page31&quot;&gt;31&lt;/span&gt;
+</code></pre>
+
+<p>You can use regex to re-format the page breaks as needed. When it all looks good, we can run the PageList plug-in.</p>
+
+  </div>
+</div>
+</p>
+
+<h2 id="run-the-pagelist-plug-in">Run the PageList plug-in</h2>
+
+<p>Now for the magic. Time to run the Pagelist plug-in, and watch it take those page breaks and create a beautiful page list for the EPUB.</p>
+
+<p>To run it, go to Plugins in the menu bar, select Edit and then PageList. If it runs successfully, you&rsquo;ll receive a message that page number targets were found, and the NCX file was updated.</p>
 
           </div>
         

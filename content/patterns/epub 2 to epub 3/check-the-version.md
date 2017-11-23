@@ -24,7 +24,7 @@ Find the package tag, which should be near the very top of the file. Inside the 
 ```
 
 {{% note %}}
-You may ask, why EPUB 3? The short answer: it's more accessible. If you want to know more, a good primer on the topic is Laura Brady's [EPUB 2 or EPUB 3: That Is Not a Question](http://epubsecrets.com/epub-2-or-epub-3-that-is-not-a-question.php).
+You may ask, why EPUB 3? The short answer: it's more accessible. If you want to know more, a couple good primers on the topic are Laura Brady's [EPUB 2 or EPUB 3: That Is Not a Question](http://epubsecrets.com/epub-2-or-epub-3-that-is-not-a-question.php), and EDRLab's [EPUB 2 vs EPUB 3](https://www.edrlab.org/epub/epub2-vs-epub3/).
 {{% /note %}}
 
 Now it's time to {{% pattern "Create a page list" %}}
