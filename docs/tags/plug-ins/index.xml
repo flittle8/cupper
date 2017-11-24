@@ -16,7 +16,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-epub3/</guid>
-      <description></description>
+      <description>If you&amp;rsquo;re working with an EPUB 2, there&amp;rsquo;s now (hopefully) a page list in the NCX file, and we&amp;rsquo;re ready to upgrade this book to an EPUB 3.
+Follow these 3 simple steps to generate an EPUB 3:
+ Go to Plugins in the menu bar Click on Output Click on ePub3-itizer  Success!
+Continue to INSERT PATTERN here.</description>
     </item>
     
   </channel>

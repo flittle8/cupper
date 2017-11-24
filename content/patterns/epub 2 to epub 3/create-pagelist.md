@@ -155,6 +155,10 @@ Now for the magic. Time to run the Pagelist plug-in, and watch it take those pag
 
 To run it, go to Plugins in the menu bar, select Edit and then PageList. If it runs successfully, you'll receive a message that page number targets were found, and the NCX file was updated.
 
+Open up the NCX file, and, voilà, there's now a page list!
+
+Time to to {{% pattern "Create an EPUB 3" %}}.
+
 {{% /expandable %}}
 
 ## Create a page list manually
@@ -197,11 +201,7 @@ Below is an example page list for a very short book.
 4. The ordered list contains "list items" represented by ```<li>``` tags. 
 5. In this case, each list item is a link ```<a href="...">``` to the corresponding page.
 
-Since we don't have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we'll need to do this manually. This means we need to copy and paste page links into the ```<a href="...">``` tags. Don't forget to include the page break id ```<#pagei>``` in the link. We also need to pop the page number in between the opening ```<a>``` and closing ```</a>``` tags. 
-
-You can play around with the code below, just click "Edit on CodePen" in the top right corner.
-
-{{% codePen wPXYXr %}}
+Since we don't have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we'll need to do this manually. This means we need to copy and paste page links into the ```<a href="...">``` tags. Remember, we need to specify the location of the pages relative to the folder they're in. In the above code, that would be a folder called "Text" or ```../Text/```. Don't forget to include the page break id in the link. The id is always prefixed with the number sign, such as ```<#pagei>```. We also need to pop the page number in between the opening ```<a>``` and closing ```</a>``` tags. 
 
 {{% /expandable %}}
 

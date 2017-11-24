@@ -546,7 +546,7 @@
   
     <h3>
   
-    <button aria-expanded="false" data-expands="js-expandable-4043e76be36be04b58d863f7d235e721">
+    <button aria-expanded="false" data-expands="js-expandable-a66b1136806dd20f49d1a3d0f0c28a28">
       <span class="expandable-label">EPUB 2</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -558,10 +558,14 @@
   
     </h3>
   
-  <div id="js-expandable-4043e76be36be04b58d863f7d235e721" hidden>
+  <div id="js-expandable-a66b1136806dd20f49d1a3d0f0c28a28" hidden>
     <p>Now for the magic. Time to run the Pagelist plug-in, and watch it take those page breaks and create a beautiful page list for the EPUB.</p>
 
 <p>To run it, go to Plugins in the menu bar, select Edit and then PageList. If it runs successfully, you&rsquo;ll receive a message that page number targets were found, and the NCX file was updated.</p>
+
+<p>Open up the NCX file, and, voilà, there&rsquo;s now a page list!</p>
+
+<p>Time to to <a class="pattern-link" href="https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-epub3/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Create an EPUB 3</a>.</p>
 
   </div>
 </div>
@@ -573,7 +577,7 @@
   
     <h3>
   
-    <button aria-expanded="false" data-expands="js-expandable-6be83bfb5ba1e41bda8969fe1fee5d6c">
+    <button aria-expanded="false" data-expands="js-expandable-d13b5787f1b5fba2a262f7978243679b">
       <span class="expandable-label">EPUB 3</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -585,7 +589,7 @@
   
     </h3>
   
-  <div id="js-expandable-6be83bfb5ba1e41bda8969fe1fee5d6c" hidden>
+  <div id="js-expandable-d13b5787f1b5fba2a262f7978243679b" hidden>
     <p>In an EPUB 3, each type of navigation is contained in it&rsquo;s own nav element with a corresponding epub:type.</p>
 
 <p>You&rsquo;ll commonly see: Table Of Contents navigation <code>&lt;nav epub:type=&quot;toc&quot;&gt;</code>, Landmarks navigation <code>&lt;nav epub:type=&quot;landmarks&quot;&gt;</code>, and Page List navigation <code>&lt;nav epub:type=&quot;page-list&quot;</code>&gt;.</p>
@@ -624,15 +628,7 @@
 <li>In this case, each list item is a link <code>&lt;a href=&quot;...&quot;&gt;</code> to the corresponding page.</li>
 </ol>
 
-<p>Since we don&rsquo;t have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we&rsquo;ll need to do this manually. This means we need to copy and paste page links into the <code>&lt;a href=&quot;...&quot;&gt;</code> tags. Don&rsquo;t forget to include the page break id <code>&lt;#pagei&gt;</code> in the link. We also need to pop the page number in between the opening <code>&lt;a&gt;</code> and closing <code>&lt;/a&gt;</code> tags.</p>
-
-<p>You can play around with the code below, just click &ldquo;Edit on CodePen&rdquo; in the top right corner.</p>
-
-<p><iframe height="300" scrolling="no" title="code demonstration with codePen" src="//codepen.io/flittle8/embed/wPXYXr/?height=265&theme-id=dark&default-tab=result,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
-    <div>
-      <a href="//codepen.io/flittle8/pen/wPXYXr">See the demo on codePen</a>
-    </div>
-  </iframe></p>
+<p>Since we don&rsquo;t have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we&rsquo;ll need to do this manually. This means we need to copy and paste page links into the <code>&lt;a href=&quot;...&quot;&gt;</code> tags. Remember, we need to specify the location of the pages relative to the folder they&rsquo;re in. In the above code, that would be a folder called &ldquo;Text&rdquo; or <code>../Text/</code>. Don&rsquo;t forget to include the page break id in the link. The id is always prefixed with the number sign, such as <code>&lt;#pagei&gt;</code>. We also need to pop the page number in between the opening <code>&lt;a&gt;</code> and closing <code>&lt;/a&gt;</code> tags.</p>
 
   </div>
 </div>
