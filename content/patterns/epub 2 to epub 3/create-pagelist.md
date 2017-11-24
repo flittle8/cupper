@@ -57,7 +57,7 @@ If there's no page list, then [check if page breaks exist](#check-if-page-breaks
 
 {{% expandable label="EPUB 3" level="3" %}}
 
-If you're working with an EPUB 3, the page list will be found in a XHTML navigation document (hereafter refered to as the NAV file). This file is often named "nav.xhtml" or contains the word "nav" in the filename. It's specific to EPUB 3.
+If you're working with an EPUB 3, the page list will be found in a XHTML navigation document (hereafter refered to as the NAV file). This file is often named "nav.xhtml" or contains the word "nav" in the filename. Sometimes you'll see it as "toc.xhtml". It's specific to EPUB 3.
 
 Like the NCX in EPUB 2, this file contains all the navigational points in the book, which appear in the main navigation panel of reading systems. Most commonly this includes: Table of Contents, Landmarks, and, a Page List.
 
@@ -161,11 +161,13 @@ To run it, go to Plugins in the menu bar, select Edit and then PageList. If it r
 
 {{% expandable label="EPUB 3" level="3" %}}
 
-In an EPUB 3, each type of navigation is contained in it's own nav element with a corresponding epub:type attribute.
+In an EPUB 3, each type of navigation is contained in it's own nav element with a corresponding epub:type. 
 
-Below is an example page list for a short 10-page book.
+You'll commonly see: Table Of Contents navigation ```<nav epub:type="toc">```, Landmarks navigation ```<nav epub:type="landmarks">```, and Page List navigation ```<nav epub:type="page-list"```>.
 
-{{<code>}}
+Below is an example page list for a very short book.
+
+{{<code numbered="true">}}
 <[[[nav]]] [[[epub:type="page-list"]]]>
 [[[<ol>]]]
 [[[<li>]]][[[<a href="../Text/Off_9780345811448_epub3_adc_r1.xhtml#pagei">i</a>]]]</li>
@@ -188,6 +190,18 @@ Below is an example page list for a short 10-page book.
 </ol>
 </nav>
 {{</code>}}
+
+1. The ```<nav>``` element represents a section with navigation links, or links to other pages or parts within the page.
+2. The ```epub:type``` attribute is used to identify structures and add additional semantics. In this case, ```epub:type="page-list"``` tells user agents that this is a page list navigation. We'll delve further into ```epub:type``` semantics later.
+3. ```<ol>``` stands for "ordered list". Navigation is always marked as an ordered list. 
+4. The ordered list contains "list items" represented by ```<li>``` tags. 
+5. In this case, each list item is a link ```<a href="...">``` to the corresponding page.
+
+Since we don't have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we'll need to do this manually. This means we need to copy and paste page links into the ```<a href="...">``` tags. Don't forget to include the page break id ```<#pagei>``` in the link. We also need to pop the page number in between the opening ```<a>``` and closing ```</a>``` tags. 
+
+You can play around with the code below, just click "Edit on CodePen" in the top right corner.
+
+{{% codePen wPXYXr %}}
 
 {{% /expandable %}}
 

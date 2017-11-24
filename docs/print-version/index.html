@@ -281,6 +281,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
 
 <ul>
 <li><a href="http://www.idpf.org/epub/dir/">EPUB Specifications and Projects</a>: A great list of EPUB resources</li>
+<li><a href="http://kb.daisy.org/publishing/">Accessible Publishing Knowledge Base</a>: The bible of accessible publishing</li>
 </ul>
 
 <h2 id="videos">Videos</h2>
@@ -424,7 +425,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     <h3>
   
-    <button aria-expanded="false" data-expands="js-expandable-c71d1c9f7e2fae48ca3d0b1e49231098">
+    <button aria-expanded="false" data-expands="js-expandable-96e62ffbb59cca106de5722d1cb128b5">
       <span class="expandable-label">EPUB 3</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -436,8 +437,8 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     </h3>
   
-  <div id="js-expandable-c71d1c9f7e2fae48ca3d0b1e49231098" hidden>
-    <p>If you&rsquo;re working with an EPUB 3, the page list will be found in a XHTML navigation document (hereafter refered to as the NAV file). This file is often named &ldquo;nav.xhtml&rdquo; or contains the word &ldquo;nav&rdquo; in the filename. It&rsquo;s specific to EPUB 3.</p>
+  <div id="js-expandable-96e62ffbb59cca106de5722d1cb128b5" hidden>
+    <p>If you&rsquo;re working with an EPUB 3, the page list will be found in a XHTML navigation document (hereafter refered to as the NAV file). This file is often named &ldquo;nav.xhtml&rdquo; or contains the word &ldquo;nav&rdquo; in the filename. Sometimes you&rsquo;ll see it as &ldquo;toc.xhtml&rdquo;. It&rsquo;s specific to EPUB 3.</p>
 
 <p>Like the NCX in EPUB 2, this file contains all the navigational points in the book, which appear in the main navigation panel of reading systems. Most commonly this includes: Table of Contents, Landmarks, and, a Page List.</p>
 
@@ -622,7 +623,7 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     <h3>
   
-    <button aria-expanded="false" data-expands="js-expandable-bff53564997cabe385eedc1012be29b3">
+    <button aria-expanded="false" data-expands="js-expandable-6be83bfb5ba1e41bda8969fe1fee5d6c">
       <span class="expandable-label">EPUB 3</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -634,12 +635,14 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
   
     </h3>
   
-  <div id="js-expandable-bff53564997cabe385eedc1012be29b3" hidden>
-    <p>In an EPUB 3, each type of navigation is contained in it&rsquo;s own nav element with a corresponding epub:type attribute.</p>
+  <div id="js-expandable-6be83bfb5ba1e41bda8969fe1fee5d6c" hidden>
+    <p>In an EPUB 3, each type of navigation is contained in it&rsquo;s own nav element with a corresponding epub:type.</p>
 
-<p>Below is an example page list for a short 10-page book.</p>
+<p>You&rsquo;ll commonly see: Table Of Contents navigation <code>&lt;nav epub:type=&quot;toc&quot;&gt;</code>, Landmarks navigation <code>&lt;nav epub:type=&quot;landmarks&quot;&gt;</code>, and Page List navigation <code>&lt;nav epub:type=&quot;page-list&quot;</code>&gt;.</p>
 
-<div class="code-annotated "><code>
+<p>Below is an example page list for a very short book.</p>
+
+<div class="code-annotated numbered"><code>
 &lt;<span class='highlight'>nav</span> <span class='highlight'>epub:type=&#34;page-list&#34;</span>&gt;
 <span class='highlight'>&lt;ol&gt;</span>
 <span class='highlight'>&lt;li&gt;</span><span class='highlight'>&lt;a href=&#34;../Text/Off_9780345811448_epub3_adc_r1.xhtml#pagei&#34;&gt;i&lt;/a&gt;</span>&lt;/li&gt;
@@ -662,6 +665,24 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
 &lt;/ol&gt;
 &lt;/nav&gt;
 </code></div>
+
+<ol>
+<li>The <code>&lt;nav&gt;</code> element represents a section with navigation links, or links to other pages or parts within the page.</li>
+<li>The <code>epub:type</code> attribute is used to identify structures and add additional semantics. In this case, <code>epub:type=&quot;page-list&quot;</code> tells user agents that this is a page list navigation. We&rsquo;ll delve further into <code>epub:type</code> semantics later.</li>
+<li><code>&lt;ol&gt;</code> stands for &ldquo;ordered list&rdquo;. Navigation is always marked as an ordered list.</li>
+<li>The ordered list contains &ldquo;list items&rdquo; represented by <code>&lt;li&gt;</code> tags.</li>
+<li>In this case, each list item is a link <code>&lt;a href=&quot;...&quot;&gt;</code> to the corresponding page.</li>
+</ol>
+
+<p>Since we don&rsquo;t have a plugin yet (if you can create one for us, contact us!) to do the laborious work of converting EPUB 3 page breaks into a page list, we&rsquo;ll need to do this manually. This means we need to copy and paste page links into the <code>&lt;a href=&quot;...&quot;&gt;</code> tags. Don&rsquo;t forget to include the page break id <code>&lt;#pagei&gt;</code> in the link. We also need to pop the page number in between the opening <code>&lt;a&gt;</code> and closing <code>&lt;/a&gt;</code> tags.</p>
+
+<p>You can play around with the code below, just click &ldquo;Edit on CodePen&rdquo; in the top right corner.</p>
+
+<p><iframe height="300" scrolling="no" title="code demonstration with codePen" src="//codepen.io/flittle8/embed/wPXYXr/?height=265&theme-id=dark&default-tab=result,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+    <div>
+      <a href="//codepen.io/flittle8/pen/wPXYXr">See the demo on codePen</a>
+    </div>
+  </iframe></p>
 
   </div>
 </div>
