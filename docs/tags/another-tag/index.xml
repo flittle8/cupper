@@ -76,6 +76,17 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
     </item>
     
     <item>
+      <title>Introduction</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/intro/</guid>
+      <description>The contents in this section are in no significant order - where you choose to begin is up to you. What&amp;rsquo;s important is that you check that each of these components are properly marked up in the book.
+TALK ABOUT WHY THIS IS IMPORTANT
+Once everything is structured properly, you can move on to  Clean up.</description>
+    </item>
+    
+    <item>
       <title>Landmarks</title>
       <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/landmarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -117,8 +128,7 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/</guid>
-      <description>The contents in this section are in no significant order - where you choose to begin is up to you. What&amp;rsquo;s important is that you check that each of these components is properly marked up in the book.
-Once everything is structured properly, you can move on to  Clean up.</description>
+      <description></description>
     </item>
     
     <item>
