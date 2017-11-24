@@ -50,7 +50,7 @@ A page list is exactly what it sounds like - a list of all the pages (or, &amp;l
       <description>If you&amp;rsquo;re working with an EPUB 2, there&amp;rsquo;s now (hopefully) a page list in the NCX file, and we&amp;rsquo;re ready to upgrade this book to an EPUB 3.
 Follow these 3 simple steps to generate an EPUB 3:
  Go to Plugins in the menu bar Click on Output Click on ePub3-itizer  Success!
-Continue to INSERT PATTERN here.</description>
+Continue to  Structure &amp;#43; Semantics.</description>
     </item>
     
     <item>
@@ -63,12 +63,93 @@ Continue to INSERT PATTERN here.</description>
     </item>
     
     <item>
+      <title>Blockquotes</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bold and italics</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context breaks</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cupper</title>
       <link>https://flittle8.github.io/cupper/print-version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/print-version/</guid>
       <description>You don&amp;rsquo;t want to edit this file :-)</description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Landmarks</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/landmarks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/landmarks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lists</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sections and headings</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/tables/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -6,6 +6,10 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/</loc>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/patterns/setup/</loc>
   </url>
   
@@ -14,7 +18,19 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/cleanup/</loc>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/create-epub3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/metadata/</loc>
   </url>
   
   <url>
@@ -32,8 +48,20 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</loc>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/</loc>
   </url>
   
   <url>
@@ -46,10 +74,6 @@
   </url>
   
   <url>
-    <loc>https://flittle8.github.io/cupper/patterns/epub-2-to-epub-3/</loc>
-  </url>
-  
-  <url>
     <loc>https://flittle8.github.io/cupper/</loc>
   </url>
   
@@ -59,8 +83,29 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/images/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/landmarks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/lists/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/metadata/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/navigation/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</loc>
   </url>
   
   <url>
@@ -81,6 +126,19 @@
   <url>
     <loc>https://flittle8.github.io/cupper/tags/plugins/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/schema.org/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/tables/</loc>
   </url>
   
   <url>

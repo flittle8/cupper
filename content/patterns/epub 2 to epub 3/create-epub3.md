@@ -14,4 +14,4 @@ Follow these 3 simple steps to generate an EPUB 3:
 
 Success! 
 
-Continue to INSERT PATTERN here.
+Continue to {{% pattern "Structure + Semantics" %}}.

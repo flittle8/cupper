@@ -40,7 +40,7 @@ A page list is exactly what it sounds like - a list of all the pages (or, &amp;l
       <description>If you&amp;rsquo;re working with an EPUB 2, there&amp;rsquo;s now (hopefully) a page list in the NCX file, and we&amp;rsquo;re ready to upgrade this book to an EPUB 3.
 Follow these 3 simple steps to generate an EPUB 3:
  Go to Plugins in the menu bar Click on Output Click on ePub3-itizer  Success!
-Continue to INSERT PATTERN here.</description>
+Continue to  Structure &amp;#43; Semantics.</description>
     </item>
     
   </channel>
