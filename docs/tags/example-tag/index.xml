@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Blockquotes</title>
-      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bold and italics</title>
       <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,7 +74,7 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/intro/</guid>
       <description>The contents in this section are in no significant order - where you choose to begin is up to you. What&amp;rsquo;s important is that you check that each of these components are properly marked up in the book.
 TALK ABOUT WHY THIS IS IMPORTANT
-Once everything is structured properly, you can move on to  Clean up.</description>
+Our goal is to create a book that uses meaninguful HTML markup to indicate page structure and text language. Meaningful HTML markup makes it easier for users of assistive technology to understand the book&amp;rsquo;s structure and the arrangement of content, which improves navigation.</description>
     </item>
     
     <item>
@@ -110,6 +101,15 @@ Once everything is structured properly, you can move on to  Clean up.</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Page titles</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/page-titles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/page-titles/</guid>
       <description></description>
     </item>
     

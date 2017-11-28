@@ -113,6 +113,10 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/page-titles/</loc>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/pages/</loc>
     <priority>0</priority>
   </url>
@@ -129,6 +133,11 @@
   
   <url>
     <loc>https://flittle8.github.io/cupper/tags/plugins/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/quotes/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quotes on Editing EPUBs for NNELS</title>
+    <link>https://flittle8.github.io/cupper/tags/quotes/</link>
+    <description>Recent content in Quotes on Editing EPUBs for NNELS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://flittle8.github.io/cupper/tags/quotes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blockquotes</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/blockquotes/</guid>
+      <description>A blockquote represents a section that is quoted from another source. It&amp;rsquo;s represented by the &amp;lt;blockquote&amp;gt; element.
+Often times, you will see books that use the &amp;lt;p&amp;gt; or paragraph element, instead of the semantically correct &amp;lt;blockquote&amp;gt;. This &amp;lt;p&amp;gt; element is often followed by a class=&amp;quot;quote&amp;quot; attribute, or a similiar class value (we&amp;rsquo;ll talk more about getting rid of classes later).
+Using the &amp;lt;p&amp;gt; element when a more specific element is more appropriate is a violation of the HTML specification.</description>
+    </item>
+    
+  </channel>
+</rss>

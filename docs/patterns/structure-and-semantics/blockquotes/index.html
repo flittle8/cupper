@@ -291,6 +291,15 @@
                             </li>
                           
                             <li class="pattern">
+                              <a href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/page-titles/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">Page titles</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
                               <a href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/" >
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
@@ -350,7 +359,7 @@
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              <a href="https://flittle8.github.io/cupper/tags/example-tag">example tag</a>
+              <a href="https://flittle8.github.io/cupper/tags/quotes">quotes</a>
             </li>
           
             <li>
@@ -366,9 +375,89 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#example">
+            Example
+          </a>
+        </li>
+      
+        <li>
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
+
+<p>A blockquote represents a section that is quoted from another source. It&rsquo;s represented by the <code>&lt;blockquote&gt;</code> element.</p>
+
+<p>Often times, you will see books that use the <code>&lt;p&gt;</code> or paragraph element, instead of the semantically correct <code>&lt;blockquote&gt;</code>. This <code>&lt;p&gt;</code> element is often followed by a <code>class=&quot;quote&quot;</code> attribute, or a similiar class value (we&rsquo;ll talk more about getting rid of classes later).</p>
+
+<p>Using the <code>&lt;p&gt;</code> element when a more specific element is more appropriate is a violation of the HTML specification.</p>
+
+<p>Go though the book and replace this meaningless &ldquo;p soup&rdquo; with <code>&lt;blockquote&gt;</code> where appropriate.</p>
+
+<h2 id="example">Example</h2>
+
+<h3 id="good-example">Good example</h3>
+
+<p>Below is an example of a properly used blockquote element in code:</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+        &lt;p&gt;In the waning days of 1724, Peter spoke to his closest adviser from his deathbed. He outlined his ideas and plans to his attendants and, “concerned that his end was near,” was eager to get the expedition under way. Calling the general-admiral Count Apraxin (Fedor Matveevich) to his bedside, he said:&lt;/p&gt;
+        <span class='highlight'>&lt;blockquote&gt;</span>
+            &lt;p&gt;Bad health has obliged me to remain home. Recently I have been thinking over a matter which has been on my mind for many years but other affairs have prevented me from carrying it out. I have reference to the finding of a passage to China and India through the Arctic Sea. On the map before me there is indicated such a passage bearing the name of Anian. There must be some reason for that. In my last travels I discussed the subject with learned men and they were of opinion that such a passage could be found. Now that the country is in no danger from enemies we should strive to win for her glory along the lines of the Arts and Sciences. In seeking such a passage who knows but perhaps we may be more successful than the Dutch and English who have made many attempts along the American coast.&lt;/p&gt;
+        <span class='highlight'>&lt;/blockquote&gt;</span>
+</code></div>
+
+
+<p>Reading systems will render the above code similiar to below:</p>
+
+<p><img src="https://flittle8.github.io/cupper/images/blockquote.png" alt="A visual rendering of the above code as it would look in a book. The text that is wrapped in a blockquote element is indented." /></p>
+
+<h3 id="bad-example">Bad example</h3>
+
+<p>Below is a bad example of code that uses class and id attributes (and CSS) to present the text in a particular way. Not only is this extra work, but it makes for meaningless text - as far as the computer knows, it&rsquo;s just a bunch of paragraphs as opposed to a quotation.</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+Indigenous people have been accepting new Canadians to their lands ever since. In Richard’s words:&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller spaceabove&#34; id=&#34;p9&#34;&gt;</span>“…so maybe this is what it comes to mean&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p10&#34;&gt;</span>this word, this name, this Kanata&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p11&#34;&gt;</span>the Huron word for village that has&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p12&#34;&gt;</span>come to mean ‘our home’&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p13&#34;&gt;</span>maybe in the end it’s a word for one fire&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p14&#34;&gt;</span>burning where a circle of people gathers&lt;/p&gt;
+<span class='highlight'>&lt;p class=&#34;chap_opener smaller&#34; id=&#34;p15&#34;&gt;</span>to hear the stories that define them”&lt;/p&gt;
+</code></div>
+
+
+<p>Below is how the above code renders visually. It&rsquo;s indented, just like a blockquote, except that the blockquote element has more specific semantics.</p>
+
+<p><img src="https://flittle8.github.io/cupper/images/blockquote-bad.png" alt="A visual rendering of the above code as it would look in a book. The text that is wrapped in the paragraph element with class attributes appears aligned in the center." /></p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>HTML5 - <a href="https://www.w3.org/TR/html/grouping-content.html#elementdef-blockquote">The blockquote element</a></li>
+</ul>
+
   </main>
 
           <footer role="contentinfo">
