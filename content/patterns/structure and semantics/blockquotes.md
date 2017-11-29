@@ -7,11 +7,11 @@ A blockquote represents a section that is quoted from another source. It's repre
 
 Often times, you will see books that use the ```<p>``` or paragraph element, instead of the semantically correct ```<blockquote>```. This ```<p>``` element is often followed by a ```class="quote"``` attribute, or a similiar class value (we'll talk more about getting rid of classes later). 
 
-Using the ```<p>``` element when a more specific element is more appropriate is a violation of the HTML specification.
+Using the ```<p>``` element when a more specific element is appropriate is a violation of the HTML specification.
 
 Go though the book and replace this meaningless "p soup" with ```<blockquote>``` where appropriate.
 
-## Example
+## Examples
 
 ### Good example
 
@@ -43,7 +43,7 @@ Indigenous people have been accepting new Canadians to their lands ever since. I
 [[[<p class="chap_opener smaller" id="p15">]]]to hear the stories that define them”</p>
 {{</code>}}
 
-Below is how the above code renders visually. It's indented, just like a blockquote, except that the blockquote element has more specific semantics.
+Below is how the above code renders visually. It's indented, just like a blockquote, but the blockquote element has more specific semantics.
 
 ![A visual rendering of the above code as it would look in a book. The text that is wrapped in the paragraph element with class attributes appears aligned in the center.](/images/blockquote-bad.png)
 

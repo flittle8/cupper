@@ -863,11 +863,11 @@ EpubCheck is a tool to validate EPUB files. It can detect many types of errors i
 
 <p>Often times, you will see books that use the <code>&lt;p&gt;</code> or paragraph element, instead of the semantically correct <code>&lt;blockquote&gt;</code>. This <code>&lt;p&gt;</code> element is often followed by a <code>class=&quot;quote&quot;</code> attribute, or a similiar class value (we&rsquo;ll talk more about getting rid of classes later).</p>
 
-<p>Using the <code>&lt;p&gt;</code> element when a more specific element is more appropriate is a violation of the HTML specification.</p>
+<p>Using the <code>&lt;p&gt;</code> element when a more specific element is appropriate is a violation of the HTML specification.</p>
 
 <p>Go though the book and replace this meaningless &ldquo;p soup&rdquo; with <code>&lt;blockquote&gt;</code> where appropriate.</p>
 
-<h2 id="example">Example</h2>
+<h2 id="examples">Examples</h2>
 
 <h3 id="good-example">Good example</h3>
 
@@ -909,7 +909,7 @@ Indigenous people have been accepting new Canadians to their lands ever since. I
 </code></div>
 
 
-<p>Below is how the above code renders visually. It&rsquo;s indented, just like a blockquote, except that the blockquote element has more specific semantics.</p>
+<p>Below is how the above code renders visually. It&rsquo;s indented, just like a blockquote, but the blockquote element has more specific semantics.</p>
 
 <p><img src="https://flittle8.github.io/cupper/images/blockquote-bad.png" alt="A visual rendering of the above code as it would look in a book. The text that is wrapped in the paragraph element with class attributes appears aligned in the center." /></p>
 
@@ -929,6 +929,22 @@ Indigenous people have been accepting new Canadians to their lands ever since. I
               Bold and italics
             </h1>
             
+
+<p><strong>Strong</strong> vs. <strong>Bold</strong>. <em>Emphasis</em> vs. <em>Italics</em>. What&rsquo;s the difference? And what should we do about it?</p>
+
+<p>In HTML5, there are two types of &ldquo;bold&rdquo; - represented by the <code>&lt;strong&gt;</code> and the <code>&lt;b&gt;</code> elements. There also two types of &ldquo;italics&rdquo; - represented by the <code>&lt;em&gt;</code> and the <code>&lt;i&gt;</code> elements. Each of these elements convey different information to the reading system. If you&rsquo;re curious about their uses, you can explore the links in the <a href="#references">References</a>.</p>
+
+<p>These four elements are often misused. Determining whether or not these elements have been applied correctly throughout the book is not only a laborious task, but, arguably, it&rsquo;s a job for the book&rsquo;s editor and not the book&rsquo;s remediators. Therefore, we&rsquo;re not going to worry about fixing up any code related to italics or bolding.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-em-element">The em element</a></li>
+<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-strong-element">The strong element</a></li>
+<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-i-element">The i element</a></li>
+<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-b-element">The b element</a></li>
+</ul>
+
           </div>
         
           <div class="pattern-section">

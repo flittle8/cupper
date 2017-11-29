@@ -56,6 +56,11 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/tags/bold/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</loc>
   </url>
   
@@ -82,12 +87,22 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/tags/emphasis/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/example-tag/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://flittle8.github.io/cupper/patterns/structure-and-semantics/images/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/italics/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
