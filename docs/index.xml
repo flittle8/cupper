@@ -29,7 +29,7 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/intro/</guid>
       <description>The contents in this section are in no significant order - where you choose to begin is up to you. What&amp;rsquo;s important is that you check that each of these components are properly marked up in the book.
 TALK ABOUT WHY THIS IS IMPORTANT
-Our goal is to create a book that uses meaninguful HTML markup to indicate page structure and text language. Meaningful HTML markup makes it easier for users of assistive technology to understand the book&amp;rsquo;s structure and the arrangement of content, which improves navigation.</description>
+Our goal is to create a book that uses meaningful HTML markup to indicate page structure and text language. Meaningful HTML markup makes it easier for users of assistive technology to understand the book&amp;rsquo;s structure and the arrangement of content, which improves navigation.</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@ Using the &amp;lt;p&amp;gt; element when a more specific element is appropriate 
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/</guid>
       <description>Strong vs. Bold. Emphasis vs. Italics. What&amp;rsquo;s the difference? And what should we do about it?
-In HTML5, there are two types of &amp;ldquo;bold&amp;rdquo; - represented by the &amp;lt;strong&amp;gt; and the &amp;lt;b&amp;gt; elements. There also two types of &amp;ldquo;italics&amp;rdquo; - represented by the &amp;lt;em&amp;gt; and the &amp;lt;i&amp;gt; elements. Each of these elements convey different information to the reading system. If you&amp;rsquo;re curious about their uses, you can explore the links in the References.</description>
+In HTML5, there are two types of &amp;ldquo;bold&amp;rdquo; - represented by the &amp;lt;strong&amp;gt; and the &amp;lt;b&amp;gt; elements. There also two types of &amp;ldquo;italics&amp;rdquo; - represented by the &amp;lt;em&amp;gt; and the &amp;lt;i&amp;gt; elements. Each of these elements conveys different information to the reading system. If you&amp;rsquo;re curious about their uses, you can explore the links in the References.</description>
     </item>
     
     <item>

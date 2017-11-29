@@ -388,9 +388,24 @@
 
 <p><strong>Strong</strong> vs. <strong>Bold</strong>. <em>Emphasis</em> vs. <em>Italics</em>. What&rsquo;s the difference? And what should we do about it?</p>
 
-<p>In HTML5, there are two types of &ldquo;bold&rdquo; - represented by the <code>&lt;strong&gt;</code> and the <code>&lt;b&gt;</code> elements. There also two types of &ldquo;italics&rdquo; - represented by the <code>&lt;em&gt;</code> and the <code>&lt;i&gt;</code> elements. Each of these elements convey different information to the reading system. If you&rsquo;re curious about their uses, you can explore the links in the <a href="#references">References</a>.</p>
+<p>In HTML5, there are two types of &ldquo;bold&rdquo; - represented by the <code>&lt;strong&gt;</code> and the <code>&lt;b&gt;</code> elements. There also two types of &ldquo;italics&rdquo; - represented by the <code>&lt;em&gt;</code> and the <code>&lt;i&gt;</code> elements. Each of these elements conveys different information to the reading system. If you&rsquo;re curious about their uses, you can explore the links in the <a href="#references">References</a>.</p>
 
-<p>These four elements are often misused. Determining whether or not these elements have been applied correctly throughout the book is not only a laborious task, but, arguably, it&rsquo;s a job for the book&rsquo;s editor and not the book&rsquo;s remediators. Therefore, we&rsquo;re not going to worry about fixing up any code related to italics or bolding.</p>
+<p>These four elements are often misused. Determining whether or not these elements have been applied correctly throughout the book is not only a laborious task, but, arguably, it&rsquo;s a job for the book&rsquo;s editor and not the book&rsquo;s remediators. Therefore, we&rsquo;re not going to worry about fixing up any code related to italics or bolding. We will assume, for better or worse, that the most appropriate markup has been applied.</p>
+
+<p>If the intent is to use emphasis and bolding for purely stylistic reasons, then CSS may be used. You may come across something similiar to the below example where the <code>&lt;span&gt;</code> element (which doesn&rsquo;t have any meaning on its own) is used with the class attribute <code>ital</code> in order to present the text as italicized using CSS.</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+
+&lt;p&gt;Reading this book will not be like reading the <span class='highlight'>&lt;span class=&#34;ital&#34;&gt;</span>Reader’s Digest,<span class='highlight'>&lt;/span&gt;</span> or <span class='highlight'>&lt;span class=&#34;ital&#34;&gt;</span>The Adventures of Tom Sawyer.<span class='highlight'>&lt;/span&gt;</span> You cannot read this book casually or breeze through it quickly.&lt;/p&gt; 
+
+</code></div>
+
+
+<p>The above code will be rendered as italicized text in reading systems, but will have no meaning associated with it.</p>
 
 <h2 id="references">References</h2>
 

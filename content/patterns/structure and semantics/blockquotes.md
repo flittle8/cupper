@@ -24,7 +24,7 @@ Below is an example of a properly used blockquote element in code:
         [[[</blockquote>]]]
 {{</code>}}
 
-Reading systems will render the above code similiar to below:
+Reading systems will render the above code similiar to below. Text-to-speech software will often announce "quote" and "end quote" at the start and end of the quotation. 
 
 ![A visual rendering of the above code as it would look in a book. The text that is wrapped in a blockquote element is indented.](/images/blockquote.png)
 
@@ -43,7 +43,7 @@ Indigenous people have been accepting new Canadians to their lands ever since. I
 [[[<p class="chap_opener smaller" id="p15">]]]to hear the stories that define them”</p>
 {{</code>}}
 
-Below is how the above code renders visually. It's indented, just like a blockquote, but the blockquote element has more specific semantics.
+Below is how the above code renders visually in the book. It's indented, just like a blockquote, but the blockquote element has more specific semantics.
 
 ![A visual rendering of the above code as it would look in a book. The text that is wrapped in the paragraph element with class attributes appears aligned in the center.](/images/blockquote-bad.png)
 
@@ -51,4 +51,4 @@ Below is how the above code renders visually. It's indented, just like a blockqu
 
   * HTML5 - [The blockquote element](https://www.w3.org/TR/html/grouping-content.html#elementdef-blockquote)
 
-
+ADD ABOUT USE OF CITE ELEMENT

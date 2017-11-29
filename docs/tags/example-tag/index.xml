@@ -65,7 +65,7 @@ Open the EPUB in Sigil There are very ways to do this: you can right-click on th
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/intro/</guid>
       <description>The contents in this section are in no significant order - where you choose to begin is up to you. What&amp;rsquo;s important is that you check that each of these components are properly marked up in the book.
 TALK ABOUT WHY THIS IS IMPORTANT
-Our goal is to create a book that uses meaninguful HTML markup to indicate page structure and text language. Meaningful HTML markup makes it easier for users of assistive technology to understand the book&amp;rsquo;s structure and the arrangement of content, which improves navigation.</description>
+Our goal is to create a book that uses meaningful HTML markup to indicate page structure and text language. Meaningful HTML markup makes it easier for users of assistive technology to understand the book&amp;rsquo;s structure and the arrangement of content, which improves navigation.</description>
     </item>
     
     <item>
