@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breaks on Editing EPUBs for NNELS</title>
+    <link>https://flittle8.github.io/cupper/tags/breaks/</link>
+    <description>Recent content in Breaks on Editing EPUBs for NNELS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://flittle8.github.io/cupper/tags/breaks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Context breaks</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/</guid>
+      <description>A context break is a thematic break, such as, a scene change in a story, or a transition to another topic within a section of a book.
+The &amp;lt;hr /&amp;gt;, or horizontal rule, element is used to represent a context break. The use of the hr element to indicate context breaks allows assistive technologies to inform users of this shift in thought, time, location, or similiar.
+You may come across all sorts of different, and creative, ways that are used to denote a change in context in a book (see Examples).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/">
+    <link rel="canonical" href="https://flittle8.github.io/cupper/tags/breaks/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://flittle8.github.io/cupper/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://flittle8.github.io/cupper/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://flittle8.github.io/cupper/images/apple-touch-icon-72x72.png">
@@ -31,8 +31,8 @@
     </style>
     <title>
       
-        Bold and italics | Editing EPUBs for NNELS
-      
+  Patterns tagged Breaks | Editing EPUBs for NNELS
+
     </title>
     
   </head>
@@ -237,7 +237,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/" aria-current="page">
+                              <a href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/bold-italics/" >
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -345,75 +345,26 @@
           
   <main id="main">
     <h1>
-      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+        <use xlink:href="#tag"></use>
+      </svg>
+      Tagged &#x201c;Breaks&#x201d;
+    </h1>
+    <ul class="patterns-list">
+      
+          <li>
+  <h2>
+    <a href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/context-breaks/">
+      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Bold and italics
-    </h1>
-    
-      <div class="tags">
-        <strong aria-hidden="true">Tags: </strong>
-        <ul aria-label="tags">
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://flittle8.github.io/cupper/tags/bold">bold</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://flittle8.github.io/cupper/tags/italics">italics</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://flittle8.github.io/cupper/tags/emphasis">emphasis</a>
-            </li>
-          
-        </ul>
-      </div>
-    
-    
+      Context breaks
+    </a>
+  </h2>
+</li>
+
       
-
-
-    
-    
-
-<p><strong>Strong</strong> vs. <strong>Bold</strong>. <em>Emphasis</em> vs. <em>Italics</em>. What&rsquo;s the difference? And what should we do about it?</p>
-
-<p>In HTML5, there are two types of &ldquo;bold&rdquo; - represented by the <code>&lt;strong&gt;</code> and the <code>&lt;b&gt;</code> elements. There also two types of &ldquo;italics&rdquo; - represented by the <code>&lt;em&gt;</code> and the <code>&lt;i&gt;</code> elements. Each of these elements conveys different information to the reading system. If you&rsquo;re curious about their uses, you can explore the links in the <a href="#references">References</a>.</p>
-
-<p>These four elements are often misused. Determining whether or not these elements have been applied correctly throughout the book is not only a laborious task, but, arguably, it&rsquo;s a job for the book&rsquo;s editor and not the book&rsquo;s remediators. Therefore, we&rsquo;re not going to worry about fixing up any code related to italics or bolding. We will assume, for better or worse, that the most appropriate markup has been applied.</p>
-
-<p>If the intent is to use emphasis and bolding for purely stylistic reasons, then CSS may be used. You may come across something similiar to the below example where the <code>&lt;span&gt;</code> element (which doesn&rsquo;t have any meaning on its own) is used with the class attribute <code>ital</code> in order to present the text as italicized using CSS. The text that&rsquo;s wrapped in span tags will be rendered as italicized text in reading systems, but will have no meaning associated with it.</p>
-
-
-
-
-
-<div class="code-annotated "><code>
-
-&lt;p&gt;Reading this book will not be like reading the <span class='highlight'>&lt;span class=&#34;ital&#34;&gt;</span>Reader’s Digest,<span class='highlight'>&lt;/span&gt;</span> or <span class='highlight'>&lt;span class=&#34;ital&#34;&gt;</span>The Adventures of Tom Sawyer.<span class='highlight'>&lt;/span&gt;</span> You cannot read this book casually or breeze through it quickly.&lt;/p&gt; 
-
-</code></div>
-
-
-<h2 id="references">References</h2>
-
-<ul>
-<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-em-element">The em element</a></li>
-<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-strong-element">The strong element</a></li>
-<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-i-element">The i element</a></li>
-<li>HTML 5 - <a href="https://www.w3.org/TR/html/textlevel-semantics.html#the-b-element">The b element</a></li>
-</ul>
-
+    </ul>
   </main>
 
           <footer role="contentinfo">

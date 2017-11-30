@@ -359,14 +359,14 @@
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              <a href="https://flittle8.github.io/cupper/tags/example-tag">example tag</a>
+              <a href="https://flittle8.github.io/cupper/tags/breaks">breaks</a>
             </li>
           
             <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              <a href="https://flittle8.github.io/cupper/tags/another-tag">another tag</a>
+              <a href="https://flittle8.github.io/cupper/tags/horizontal-rule">horizontal rule</a>
             </li>
           
         </ul>
@@ -375,9 +375,193 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#examples">
+            Examples
+          </a>
+        </li>
+      
+        <li>
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
+
+<p>A context break is a thematic break, such as, a scene change in a story, or a transition to another topic within a section of a book.</p>
+
+<p>The <code>&lt;hr /&gt;</code>, or horizontal rule, element is used to represent a context break. The use of the <code>hr</code> element to indicate context breaks allows assistive technologies to inform users of this shift in thought, time, location, or similiar.</p>
+
+<p>You may come across all sorts of different, and creative, ways that are used to denote a change in context in a book (see <a href="#examples">Examples</a>). These ways may be useful cues for visual readers, but for non-visual readers they are meaningless. Only one way - the <code>hr</code> - is meaningful to assistive technologies.</p>
+
+<p>Go through the book and add in the <code>&lt;hr /&gt;</code> element wherever a context break occurs.  Note that the <code>hr</code> element is self-closing.</p>
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    <p>The <code>hr</code> element should not be used for purely decorative purposes, such as decoration between sections (the <code>&lt;section&gt;</code> element), or at the beginning or end of them. We&rsquo;ll discuss sections more in <a class="pattern-link" href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Sections and headings</a>.</p>
+
+  </div>
+</aside>
+
+
+<h2 id="examples">Examples</h2>
+
+<p>Context breaks are represented in books in many ways. Below are just a few examples. You can see more <a href="https://www.thebookdesigner.com/2010/06/book-design-8-solutions-to-the-text-break-dilemma/">types of context breaks in this article from The Book Designer</a>.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-3da7b5b1fdbbf5efbe3b3a8d213514bd">
+      <span class="expandable-label">1: The blank space</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-3da7b5b1fdbbf5efbe3b3a8d213514bd" hidden>
+    <p>Extra blank space between paragraphs is commonly used to identify a change in context. This is done by using CSS, and you&rsquo;ll see the guilty class attribute lingering nearby in the code.</p>
+
+<p>In the below example, the paragraph class value <code>bodytext_epspbe</code> is the offending culprit. If you&rsquo;re curious, you can search the CSS file to see exactly what&rsquo;s going on; in this case, the text with this class value has a top margin of 36 pixels.</p>
+
+<p>You can insert a <code>&lt;hr /&gt;</code> between the two paragraphs.</p>
+
+<div class="code-annotated "><code>&lt;p&gt;They also paid a visit to the security guards at the Intercity mall. One of the guards had torn down a missing persons poster of Jordan that was posted in the mall and thrown it into the trash.&lt;/p&gt;
+&lt;p <span class='highlight'>class=&#34;bodytext_epspbe&#34;</span>&gt;Here’s the thing about the north: Everybody knows everyone else.&lt;/p&gt;
+</code></div>
+
+<p>Below is how the above code renders in the book:</p>
+
+<p><img src="https://flittle8.github.io/cupper/images/extra-blank-space-context-break.png" alt="Extract from a book. There's extra blank space between the paragraphs to denote a context break." /></p>
+
+  </div>
+</div>
+
+
+<p><div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-676e47e289b2f8cf5a0c50ef71947f1e">
+      <span class="expandable-label">2: The drop caps or all caps</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-676e47e289b2f8cf5a0c50ef71947f1e" hidden>
+    <p>A sentence within a chapter that begins with drop caps or all caps is usually a sure sign that there&rsquo;s a break in the continuity of the narrative.</p>
+
+<p>You can insert a <code>&lt;hr /&gt;</code> right before that sentence.</p>
+
+<div class="code-annotated "><code>&lt;p&gt;To a certain degree, this is normal. Historians are not eyewitnesses—they construct knowledge—others transmit experience.&lt;/p&gt;
+<span class='highlight'>&lt;hr/&gt;</span>
+&lt;p&gt;I HAVE LIVED at Versailles for more than thirty years now and feel I have become a witness. My experience and life depend upon these stones, like ivy clambering up a wall.&lt;/p&gt; 
+</code></div>
+
+  </div>
+</div>
+</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-17fc544be381e96184d147cf7c15e568">
+      <span class="expandable-label">3: Asterisms and other decorations</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-17fc544be381e96184d147cf7c15e568" hidden>
+    <p>The asterism (***) and other such decorative elements are also commonly used for context breaks. In the below example, an em dash is used in combination with CSS styling that adds extra space.</p>
+
+<p>You can replace all the highlighted text below with a simple <code>&lt;hr /&gt;</code> element.</p>
+
+<div class="code-annotated "><code>&lt;p&gt;In the midst of the world’s largest immigration boom, underway even as Canada achieved nationhood through Confederation, the country not only failed to attract people but provoked millions of its own residents to depart—an enormous missed opportunity from which Canada has not yet recovered.&lt;/p&gt;
+<span class='highlight'>&lt;div class=&#34;section_break&#34; id=&#34;div2&#34;&gt;</span><span class='highlight'>—</span><span class='highlight'>&lt;/div&gt;</span>
+&lt;p&gt;In the wake of the 1837 rebellions, Britain’s Whig government dispatched John Lambton, the Earl of Durham, to investigate what exactly had gone so terribly wrong in the North American colonies.&lt;/p&gt;
+</code></div>
+
+<p>Below is how the above code renders in the book:</p>
+
+<p><img src="https://flittle8.github.io/cupper/images/em-dash-context-break.png" alt="Extract from a book. There's extra blank space between the paragraphs, as well as a centrally aligned em dash, to denote a context break." /></p>
+
+  </div>
+</div>
+
+
+<p><div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-387f815cfbd70d5b0263965ccca47744">
+      <span class="expandable-label">4: Images</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-387f815cfbd70d5b0263965ccca47744" hidden>
+    <p>Images, like the previous methods, are a suboptimal way to indicate a context change because they carry no semantic information.</p>
+
+<p>Go ahead and replace these images with the <code>hr</code> element.</p>
+
+<p>Below is an example of an image used for a decorative context break. Say goodbye to the <code>div</code> and <code>img</code> elements and hello to the <code>hr</code>.</p>
+
+<div class="code-annotated "><code>&lt;p&gt;As winter wore on, they endured relentless Arctic winds, waist-deep snow, the ravages of scurvy, and continuous assaults by the feral blue foxes.&lt;/p&gt;
+<span class='highlight'>&lt;div class=&#34;Divider&#34;&gt;</span><span class='highlight'>&lt;img alt=&#34;&#34; class=&#34;_idGenObjectAttribute-1&#34; src=&#34;../Images/25194_Stellers_sea_cow_text_break.png&#34;/&gt;</span><span class='highlight'>&lt;/div&gt;</span>
+&lt;p class=&#34;Justify&#34;&gt;&lt;span class=&#34;SmallCaps&#34;&gt;The St. Peter was one of two ships commissioned for the Great Northern Expedition (1733–1743), also known as the Second Kamchatka Expedition.&lt;/p&gt; 
+</code></div>
+
+<p>Below is how this code is rendered in the book. You&rsquo;ll also notice that the sentence after the break begins in small caps, styled using CSS.</p>
+
+<p><img src="https://flittle8.github.io/cupper/images/image-context-break.png" alt="Extract from a book. There's an image of a fish between the paragraphs to denote a context break." /></p>
+
+  </div>
+</div>
+</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>HTML5 - <a href="https://www.w3.org/TR/html/grouping-content.html#the-hr-element">The hr element</a></li>
+</ul>
+
   </main>
 
           <footer role="contentinfo">

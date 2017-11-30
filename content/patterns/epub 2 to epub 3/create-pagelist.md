@@ -206,3 +206,4 @@ Since we don't have a plugin yet (if you can create one for us, contact us!) to 
 {{% /expandable %}}
 
 
+NOTE TO SELF: HIDE PAGE NUMBERS?
