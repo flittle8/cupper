@@ -77,7 +77,8 @@ You may come across all sorts of different, and creative, ways that are used to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/lists/</guid>
-      <description></description>
+      <description>A list of items needs to be tagged appropriately so that users can easily navigate through it. The ability to move quickly and effectively through long lists is a key reading need and often overlooked as an accessibility feature.
+Sighted readers rarely notice the advantage of being able to quickly skim a list, determine if it&amp;rsquo;s of any interest and/or selectively read items. Properly tagging lists is a small measure that can greatly decrease user frustration.</description>
     </item>
     
     <item>
