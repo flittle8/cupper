@@ -8,6 +8,7 @@ It's not required that you read or understand all about EPUB, HTML, et cetera. H
 
 ## Webpages
 
+* [Web Accessibility Initiative](https://www.w3.org/WAI/videos/standards-and-benefits.html)
 * [EPUB Specifications and Projects](http://www.idpf.org/epub/dir/): A great list of EPUB resources
 * [Accessible Publishing Knowledge Base](http://kb.daisy.org/publishing/): The bible of accessible publishing
 * [CSS Tutorial](https://www.w3schools.com/css/default.asp)

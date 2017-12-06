@@ -77,8 +77,8 @@ You may come across all sorts of different, and creative, ways that are used to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/lists/</guid>
-      <description>A list of items needs to be tagged appropriately so that users can easily navigate through it. The ability to move quickly and effectively through long lists is a key reading need and often overlooked as an accessibility feature.
-Sighted readers rarely notice the advantage of being able to quickly skim a list, determine if it&amp;rsquo;s of any interest and/or selectively read items. Properly tagging lists is a small measure that can greatly decrease user frustration.</description>
+      <description>If you come across a list of items in a book, you need to check that it&amp;rsquo;s tagged appropriately so that users can easily navigate through it. The ability to move quickly and effectively through long lists is a key reading need and often overlooked as an accessibility feature.
+Sighted readers rarely notice the advantage of being able to quickly skim a list, determine if it&amp;rsquo;s of any interest and/or selectively read items.</description>
     </item>
     
     <item>
@@ -96,7 +96,9 @@ Sighted readers rarely notice the advantage of being able to quickly skim a list
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/page-titles/</guid>
-      <description></description>
+      <description>Each xhtml file in a book has a title. This title can be found at the top of the page in the &amp;lt;head&amp;gt; element.
+Meaningful titles allow readers to find and navigate to pages without having to first read them. Assistive technologies typically announce the title of each page when it&amp;rsquo;s first loaded in a user agent.
+It&amp;rsquo;s commonplace to see just the title of the book in the &amp;lt;title&amp;gt; element on every xhtml page.</description>
     </item>
     
     <item>
@@ -105,7 +107,9 @@ Sighted readers rarely notice the advantage of being able to quickly skim a list
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</guid>
-      <description></description>
+      <description>Adding sections, asides, headings, and attributes Don&amp;rsquo;t be off-put by the heading, this is pretty straightforward.
+For readers to be able to follow and understand the content, you need to clearly identify the sections of the book. Clearly grouping and identifying content enables better navigation by anyone reading using an assistive technology. To give the book a meaningful structure, follow the steps below.
+1: Add a section or an aside element All the primary and secondary sections of a book need to be encapsulated in either a &amp;lt;section&amp;gt; or an &amp;lt;aside&amp;gt; element, respectively.</description>
     </item>
     
     <item>

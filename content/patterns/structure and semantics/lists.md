@@ -3,7 +3,7 @@ title = "Lists"
 tags = ["example tag", "another tag"]
 +++
 
-A list of items needs to be tagged appropriately so that users can easily navigate through it. The ability to move quickly and effectively through long lists is a key reading need and often overlooked as an accessibility feature.
+If you come across a list of items in a book, you need to check that it's tagged appropriately so that users can easily navigate through it. The ability to move quickly and effectively through long lists is a key reading need and often overlooked as an accessibility feature.
 
 Sighted readers rarely notice the advantage of being able to quickly skim a list, determine if it's of any interest and/or selectively read items. Properly tagging lists is a small measure that can greatly decrease user frustration. It allows readers to quickly navigate between items as well as move in and out of lists. It also allows assistive technologies or reading systems to announce the total number of items in the list and the reader's current position as they navigate through, making it simpler for them to reference the location again should they need.
 
@@ -95,7 +95,7 @@ The above code renders like below:
 
 A definition list, or ```<dl>``` element, is used for name/value lists. These can include dictionaries, glossaries, frequently asked questions and similar. 
 
-The definition list ```<dl>``` is composed of two terms - a term or ```<dt>``` element and its definition/value or ```<dd>``` element. Each ```dt``` element is meant to define a unique value. When the definition term or ```dt``` element represents a definition for a term, then use the ```<dfn>``` element to represent a definition.
+The definition list ```<dl>``` is composed of two parts - a term or ```<dt>``` element and its definition/value or ```<dd>``` element. Each ```dt``` element is meant to define a unique value. When the definition term or ```dt``` element represents a definition, then also use the ```<dfn>``` or definition element.
 
 {{<code>}}
 [[[<dl>]]]

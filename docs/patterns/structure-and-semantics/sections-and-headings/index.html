@@ -375,9 +375,288 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#adding-sections-asides-headings-and-attributes">
+            Adding sections, asides, headings, and attributes
+          </a>
+        </li>
+      
+        <li>
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
+
+<h2 id="adding-sections-asides-headings-and-attributes">Adding sections, asides, headings, and attributes</h2>
+
+<p>Don&rsquo;t be off-put by the heading, this is pretty straightforward.</p>
+
+<p>For readers to be able to follow and understand the content, you need to clearly identify the sections of the book. Clearly grouping and identifying content enables better navigation by anyone reading using an assistive technology. To give the book a meaningful structure, follow the steps below.</p>
+
+<h3 id="1-add-a-section-or-an-aside-element">1: Add a section or an aside element</h3>
+
+<p>All the primary and secondary sections of a book need to be encapsulated in either a <code>&lt;section&gt;</code> or an <code>&lt;aside&gt;</code> element, respectively.</p>
+
+<p>Primary sections would include content like the dedication, epigraph, prologue, about the author, and chapters. The primary content establishes the book&rsquo;s structural hierarchy and is reflected in the Table Of Contents. Secondary content is related to the content of the section, but can be considered separate from it. Sidebars would be secondary content.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify a chapter</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify a footnote section</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify a section that doesn&#39;t have a heading</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify a part</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<h3 id="2-add-a-heading-element">2: Add a heading element</h3>
+
+<p>Heading elements refer to the six levels of headings in HTML: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code>.</p>
+
+<p>Note that we don&rsquo;t use heading elements for subtitles as these will appear as subsections to users of assistive technologies. To identify a subtitle, you should apply the role <code>doc-subtitle</code> to the <code>&lt;p&gt;</code> element that follows the heading.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Section with a heading</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Section with a heading and sub-heading</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<h3 id="3-add-an-aria-role-attribute">3: Add an ARIA role attribute</h3>
+
+<p>The ARIA role attribute provides more precise information about the structure of a book for users of assistive technologies. The ARIA role attribute should be attached to each section to indicate the specific nature of the content, when applicable. See the <a href="https://www.w3.org/TR/dpub-aria-1.0/#roles">Digital Publishing WAI-ARIA module</a> for a list of values that can be used with the attribute.</p>
+
+<p>When the role is not specified, a generic section/subsection nature is assumed based on the nesting level.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Example 1 </span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Example 2 </span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<h3 id="4-add-an-epub-type-attribute">4: Add an epub:type attribute</h3>
+
+<p>The epub:type attribute was intended to serve a similar function to the ARIA role attribute in EPUB 3. The attribute is still useful and can enhance the user experience even though the accessibility support for it isn&rsquo;t fully materialized yet.</p>
+
+<p>See the <a href="http://www.idpf.org/epub/31/spec/epub-contentdocs.html#refEPUBStructureVocab">EPUB 3 Structural Semantics Vocabulary</a> for a list of values that can be used with the attribute.</p>
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify endnote and reference</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h3>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
+      <span class="expandable-label">Identify chapters</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h3>
+  
+  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
+    
+  </div>
+</div>
+
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>HTML5 - <a href="https://www.w3.org/TR/html/sections.html#the-section-element">The section element</a></li>
+<li>HTML5 - <a href="https://www.w3.org/TR/html/sections.html#the-aside-element">The aside element</a></li>
+<li>HTML5 - <a href="https://www.w3.org/TR/html/sections.html#headings-and-sections">Headings and sections</a></li>
+<li><a href="http://www.idpf.org/epub/31/spec/epub-contentdocs.html#refEPUBStructureVocab">EPUB 3 Structural Semantics Vocabulary</a></li>
+</ul>
+
   </main>
 
           <footer role="contentinfo">

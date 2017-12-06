@@ -375,9 +375,67 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#examples">
+            Examples
+          </a>
+        </li>
+      
+        <li>
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
+
+<p>Each xhtml file in a book has a title. This title can be found at the top of the page in the <code>&lt;head&gt;</code> element.</p>
+
+<p>Meaningful titles allow readers to find and navigate to pages without having to first read them. Assistive technologies typically announce the title of each page when it&rsquo;s first loaded in a user agent.</p>
+
+<p>It&rsquo;s commonplace to see just the title of the book in the <code>&lt;title&gt;</code> element on every xhtml page. But this doesn&rsquo;t help readers identify where they are in the book. You&rsquo;ll need to add the title of the page, which can usually be found in the <code>&lt;h1&gt;</code> element on the page or in the Table of Contents. It is often the title of a chapter.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>In the example below, the chapter title, as well as the title of the book, should go inside the <code>&lt;title&gt;</code> element.
+Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chapter fifteen. In Sigil, you can also verify the title of the xhtml page that you&rsquo;re in by looking at the Table Of Contents pane on the right side (to turn on the TOC pane, press Alt+F3 or go to View &gt; Table of Contents).</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;!DOCTYPE html&gt;
+
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; xmlns:epub=&#34;http://www.idpf.org/2007/ops&#34; lang=&#34;en&#34;&gt;
+&lt;head&gt;
+<span class='highlight'>&lt;title&gt;Chapter Fifteen - Run, Hide, Repeat: A Memoir of a Fugitive Childhood&lt;/title&gt;</span>
+&lt;link href=&#34;../Styles/prhStyle.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;/&gt;
+&lt;link href=&#34;../Styles/prhStyle-media-queries.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;/&gt;
+&lt;link href=&#34;../Styles/Daki_9780735233232_epub3_css_r1.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;/&gt;
+&lt;meta charset=&#34;utf-8&#34;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<span class='highlight'>&lt;h1 class=&#34;chapter&#34; id=&#34;c15&#34;&gt;FIFTEEN&lt;/h1&gt;</span>
+</code></div>
+
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>HTML 5 - <a href="https://www.w3.org/TR/html/document-metadata.html#the-title-element">The title element</a></li>
+</ul>
+
   </main>
 
           <footer role="contentinfo">
