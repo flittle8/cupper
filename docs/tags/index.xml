@@ -20,11 +20,29 @@
     </item>
     
     <item>
+      <title>Aria</title>
+      <link>https://flittle8.github.io/cupper/tags/aria/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/tags/aria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Articles</title>
       <link>https://flittle8.github.io/cupper/tags/articles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/tags/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aside</title>
+      <link>https://flittle8.github.io/cupper/tags/aside/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/tags/aside/</guid>
       <description></description>
     </item>
     
@@ -65,11 +83,29 @@
     </item>
     
     <item>
+      <title>Epubtype</title>
+      <link>https://flittle8.github.io/cupper/tags/epubtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/tags/epubtype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Example Tag</title>
       <link>https://flittle8.github.io/cupper/tags/example-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/tags/example-tag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heading</title>
+      <link>https://flittle8.github.io/cupper/tags/heading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/tags/heading/</guid>
       <description></description>
     </item>
     
@@ -151,6 +187,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/tags/schema.org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Section</title>
+      <link>https://flittle8.github.io/cupper/tags/section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/tags/section/</guid>
       <description></description>
     </item>
     

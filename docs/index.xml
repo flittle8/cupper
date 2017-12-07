@@ -169,9 +169,8 @@ It&amp;rsquo;s commonplace to see just the title of the book in the &amp;lt;titl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</guid>
-      <description>Adding sections, asides, headings, and attributes Don&amp;rsquo;t be off-put by the heading, this is pretty straightforward.
-For readers to be able to follow and understand the content, you need to clearly identify the sections of the book. Clearly grouping and identifying content enables better navigation by anyone reading using an assistive technology. To give the book a meaningful structure, follow the steps below.
-1: Add a section or an aside element All the primary and secondary sections of a book need to be encapsulated in either a &amp;lt;section&amp;gt; or an &amp;lt;aside&amp;gt; element, respectively.</description>
+      <description>For readers to be able to follow and understand the content, you need to clearly identify the sections of the book. Clearly grouping and identifying content enables better navigation by anyone reading using an assistive technology. To give the book a meaningful structure, follow the steps below.
+Add a section or an aside element All the primary and secondary sections of a book need to be encapsulated in either a &amp;lt;section&amp;gt; or an &amp;lt;aside&amp;gt; element, respectively.</description>
     </item>
     
     <item>

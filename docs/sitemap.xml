@@ -47,7 +47,17 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/tags/aria/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/articles/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/aside/</loc>
     <priority>0</priority>
   </url>
   
@@ -97,7 +107,17 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/tags/epubtype/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/example-tag/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/heading/</loc>
     <priority>0</priority>
   </url>
   
@@ -168,6 +188,11 @@
   
   <url>
     <loc>https://flittle8.github.io/cupper/tags/schema.org/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/section/</loc>
     <priority>0</priority>
   </url>
   
