@@ -143,11 +143,9 @@ If a book includes the same role multiple times (i.e. multiple chapters, appendi
 
 {{% expandable label="Example 1: Multiple chapters" level="2" %}}
 
-In the below example, since the chapter already has a visual heading/label, you can refer to this heading by using the ```aria-labelledby``` attribute. The ```aria-labelledby``` attribute has a value of ```ch01```, which points to the ```h1``` element or "Chapter One".
-
 {{<code>}}
-<section role="chapter" [[[aria-labelledby="ch01"]]]>
-   <h1 [[[id="ch01"]]]>Chapter One</h1>
+<section epub:type="chapter" [[[role="doc-chapter"]]]>
+   <h1>Chapter One</h1>
    …
 </section>
 {{</code>}}

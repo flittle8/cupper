@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Notes</title>
+      <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://flittle8.github.io/cupper/patterns/structure-and-semantics/notes/</guid>
+      <description>Notes need to be properly identified in the text as either footnotes or endnotes.
+To do this, you&amp;rsquo;ll need to apply the appropriate epub:type and aria roles to both the references and their notes.
+Since notes are formatted consistently throughout the entire book, this means you can use regex to update all of them at once into the correct format.
+EPUB 2 vs EPUB 3 notes The difference between EPUB 2 and EPUB 3 notes is one of semantics.</description>
+    </item>
+    
+    <item>
       <title>Sections and headings</title>
       <link>https://flittle8.github.io/cupper/patterns/structure-and-semantics/sections-and-headings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

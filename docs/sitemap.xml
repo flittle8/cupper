@@ -107,12 +107,22 @@
   </url>
   
   <url>
+    <loc>https://flittle8.github.io/cupper/tags/endnotes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://flittle8.github.io/cupper/tags/epubtype/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://flittle8.github.io/cupper/tags/example-tag/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://flittle8.github.io/cupper/tags/footnotes/</loc>
     <priority>0</priority>
   </url>
   

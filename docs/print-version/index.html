@@ -1346,6 +1346,188 @@ Indigenous people have been accepting new Canadians to their lands ever since. I
               Notes
             </h1>
             
+
+<p>Notes need to be properly identified in the text as either footnotes or endnotes.</p>
+
+<p>To do this, you&rsquo;ll need to apply the appropriate <code>epub:type</code> and aria roles to both the references and their notes.</p>
+
+<p>Since notes are formatted consistently throughout the entire book, this means you can use regex to update all of them at once into the correct format.</p>
+
+<h2 id="epub-2-vs-epub-3-notes">EPUB 2 vs EPUB 3 notes</h2>
+
+<p>The difference between EPUB 2 and EPUB 3 notes is one of semantics. And, as we know, semantics greatly affects usability.</p>
+
+<p>In EPUB 2, notes are placed inside a simple <code>&lt;a&gt;</code> or hyperlink element. There&rsquo;s no way for assistive technology to identify this as a note; it just sees it as more text content. That&rsquo;s why we need to upgrade these notes to EPUB 3 style.</p>
+
+<p>In EPUB 3, the notes are still within an <code>&lt;a&gt;</code> element, but have additional semantics added so that technology understands exactly what type of link it is (footnote or endnote) and can handle the information more intelligently. For example, with proper semantics applied, user agents can provide readers with the choice to ignore all notes (so as to not interrupt the reading experience). Some reading systems will also handle them as pop-ups.</p>
+
+<p>Here&rsquo;s how a typical EPUB 2 reference and its note will look:</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+&lt;p&gt;The date of this particular papyrus has been placed in the third century, or somewhere between 250 and 300 A.D.&lt;sup&gt;<span class='highlight'>&lt;a href=&#34;../Text/Notes.xhtml#end001&#34;&gt;1&lt;/a&gt;</span>&lt;/sup&gt;&lt;/p&gt;
+…
+…
+<span class='highlight'>&lt;p class=&#34;noindentpara&#34; id=&#34;end001&#34;&gt;</span>1. Bruce Metzger, The Text of the New Testament (Oxford University Press, New York, 1968), p. 38.&lt;/p&gt;
+</code></div>
+
+
+<p>You&rsquo;ll notice that the note reference is just a hyperlink that takes the reader to the note itself. The reference is often surrounded by the <code>&lt;sup&gt;</code> or superscript element for presentational purposes. The note is just text within a paragraph element. The reference and its notes are linked together by the id <code>end001</code>.</p>
+
+<p>You&rsquo;ll need to upgrade these EPUB 2 notes to EPUB 3. Here&rsquo;s how a typical EPUB 3 reference and its note will look:</p>
+
+
+
+
+
+<div class="code-annotated "><code>
+&lt;p&gt;The date of this particular papyrus has been placed in the third century, or somewhere between 250 and 300 A.D.&lt;sup&gt;&lt;a <span class='highlight'>epub:type=&#34;noteref&#34;</span> <span class='highlight'>role=&#34;doc-noteref&#34;</span> href=&#34;../Text/Notes.xhtml#end001&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+…
+…
+&lt;<span class='highlight'>li</span> <span class='highlight'>epub:type=&#34;endnote&#34;</span> <span class='highlight'>role=&#34;doc-endnote&#34;</span> class=&#34;noindentpara&#34; id=&#34;end001&#34;&gt;1. Bruce Metzger, The Text of the New Testament (Oxford University Press, New York, 1968), p. 38.&lt;/li&gt;
+</code></div>
+
+
+<p>Notice that the <code>epub:type=&quot;noteref&quot;</code> as well as the aria <code>role=&quot;doc-noteref&quot;</code> are applied to the reference, while the <code>epub:type=&quot;endnote&quot;</code> and the aria <code>role=&quot;doc-endnote&quot;</code> are applied to the note itself. The notes are also presented as list items <code>&lt;li&gt;</code> - and not separate paragraphs <code>&lt;p&gt;</code> - for easy navigation.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>Below are some examples of how endnotes, footnotes, and endnote and footnote sections should look after you&rsquo;ve worked your regex magic.</p>
+
+<div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-70c21f0a64b733d54fe3285cd5e122c2">
+      <span class="expandable-label">Example 1: Endnote or footnote reference</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-70c21f0a64b733d54fe3285cd5e122c2" hidden>
+    <p>Here&rsquo;s what a typical EPUB 2 reference would look like that we need to fix:</p>
+
+<div class="code-annotated "><code>
+ …between 250 and 300 A.D.&lt;sup&gt;&lt;a href=&#34;../Text/Notes.xhtml#note001&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; …
+</code></div>
+
+<p>Here&rsquo;s how you could use regex to fix all these references at once:</p>
+
+<div class="code-annotated "><code>
+Find: &lt;sup&gt;&lt;a href=&#34;(.*?)&#34;&gt;
+Replace: &lt;sup&gt;&lt;a epub:type=&#34;noteref&#34; role=&#34;doc-noteref&#34; href=&#34;\1&#34;
+</code></div>
+
+<p>Basically we&rsquo;ve left everything in tact except that we&rsquo;ve added in the <code>epub:type=&quot;noteref&quot;</code> and aria <code>role=&quot;doc-noteref&quot;</code> semantics to all the references. I&rsquo;ve included the <code>&lt;sup&gt;</code> in the search just in case there are other links in the book, which aren&rsquo;t notes, that we don&rsquo;t want to capture and replace.</p>
+
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-d89d7491063639a093f71602884fef1c">
+      <span class="expandable-label">Example 2: Endnotes or footnotes at the end of a section or book</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-d89d7491063639a093f71602884fef1c" hidden>
+    <p>Notes are often grouped together either at the end of a section or at the end of a book. In both cases, the notes should be presented as a list (as opposed to a bunch of paragraphs). You&rsquo;ll also need to add the <code>epub:type=&quot;endnotes&quot;</code> to the <code>section</code> element, and the aria <code>role=doc-endnotes</code> to the <code>&lt;ol&gt;</code> element. Each endnote should be a list item <code>&lt;li&gt;</code> and given an <code>epub:type=&quot;endnote&quot;</code> and aria <code>role=doc-endnote</code>.</p>
+
+<p>You can add in the section and unordered list elements manually, then use regex to update the endnotes.</p>
+
+<div class="code-annotated "><code>
+&lt;section epub:type=&#34;endnotes&#34;&gt;
+    &lt;h2&gt;Reference notes&lt;/h2&gt;
+    &lt;ol role=&#34;doc-endnotes&#34;&gt;
+        <span class='highlight'>&lt;p id=&#34;end001&#34;&gt;</span>1. Bruce Metzger, The Text of the New Testament (Oxford University Press, New York, 1968), p. 38.<span class='highlight'>&lt;/p&gt;</span>
+         …
+</code></div>
+
+<p>Here&rsquo;s how you could update all these endnotes in the book:</p>
+
+<div class="code-annotated "><code>
+Find: &lt;p id=&#34;.*?&#34;&gt;(.*)&lt;/p&gt;
+Replace: &lt;li epub:type=&#34;endnote&#34; role=&#34;doc-endnote&#34; id=&#34;\1&#34;&gt;\2&lt;/li&gt;
+</code></div>
+
+<p>The resulting code will look like:</p>
+
+<div class="code-annotated "><code>
+&lt;section epub:type=&#34;endnotes&#34;&gt;
+    &lt;h2&gt;Reference notes&lt;/h2&gt;
+    &lt;ol role=&#34;doc-endnotes&#34;&gt;
+        <span class='highlight'>&lt;li</span> <span class='highlight'>epub:type=&#34;endnote&#34;</span> <span class='highlight'>role=&#34;doc-endnote&#34;</span> id=&#34;end001&#34;&gt;1. Bruce Metzger, The Text of the New Testament (Oxford University Press, New York, 1968), p. 38.<span class='highlight'>&lt;/li&gt;</span>
+        …
+    &lt;/ol&gt;
+</code></div>
+
+<p>Again, we&rsquo;ve left everything in tact except that we&rsquo;ve added in the <code>epub:type=&quot;endnote&quot;</code> and aria <code>role=&quot;doc-endnote&quot;</code>. If these were footnotes, you&rsquo;d use the <code>epub:type=&quot;footnote&quot;</code> and aria <code>role=&quot;doc-footnote&quot;</code> semantics.</p>
+
+<p>Tip: You&rsquo;ll want to avoid capturing innocent paragraph text with your regex. Sometimes it helps to carry out the Find and Replace in one file only (especially the case when all the endnotes are in their own xhtml file).</p>
+
+  </div>
+</div>
+
+
+<p><div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-404777dbfed60e2c2c01088e1a36ffd8">
+      <span class="expandable-label">Example 3: Footnotes in the body</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-404777dbfed60e2c2c01088e1a36ffd8" hidden>
+    <p>For individual footnotes, or ancillary information like commentary, that occur within the body of the text, you&rsquo;ll need to wrap the note in an <code>&lt;aside&gt;</code> element and add to it the <code>epub:type=&quot;footnote&quot;</code> and aria <code>role=doc-footnote</code> semantics. Marking the note as an <code>&lt;aside&gt;</code> ensures that it&rsquo;s treated as secondary content.</p>
+
+<div class="code-annotated "><code>
+&lt;p&gt;In that year&lt;a href=&#34;#ft2f&#34; role=&#34;doc-noteref&#34; epub:type=&#34;noteref&#34;&gt;2&lt;/a&gt; there were 67 mills engaged in the manufacture of cotton goods …&lt;/p&gt;
+ …
+&lt;<span class='highlight'>aside</span> id=&#34;ft2f&#34; <span class='highlight'>epub:type=&#34;footnote&#34;</span> <span class='highlight'>role=&#34;doc-footnote&#34;</span>&gt;
+   &lt;p&gt;2 The manufacturing statistics for 1900 which follow are not those given in the Twelfth Census, but are taken from the &lt;em&gt;Census of Manufactures&lt;/em&gt; …&lt;/p&gt;
+<span class='highlight'>&lt;/aside&gt;</span>
+</code></div>
+
+  </div>
+</div>
+</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>DPUB-ARIA — <a href="https://www.w3.org/TR/dpub-aria-1.0/#doc-footnote">doc-footnote</a></li>
+<li>DPUB-ARIA — <a href="https://www.w3.org/TR/dpub-aria-1.0/#doc-endnote">doc-endnote</a></li>
+<li>DPUB-ARIA — <a href="https://www.w3.org/TR/dpub-aria-1.0/#doc-endnotes">doc-endnotes</a></li>
+<li><a href="https://idpf.github.io/epub-vocabs/structure/">EPUB 3 Structural Semantics Vocabulary</a></li>
+</ul>
+
           </div>
         
           <div class="pattern-section">
@@ -1671,7 +1853,7 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
   
     <h2>
   
-    <button aria-expanded="false" data-expands="js-expandable-eba8014b789e9b822ef60dbe01db7fbc">
+    <button aria-expanded="false" data-expands="js-expandable-6558b267bcbc6fa29456c7b492f205cb">
       <span class="expandable-label">Example 1: Multiple chapters</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
@@ -1683,12 +1865,10 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
   
     </h2>
   
-  <div id="js-expandable-eba8014b789e9b822ef60dbe01db7fbc" hidden>
-    <p>In the below example, since the chapter already has a visual heading/label, you can refer to this heading by using the <code>aria-labelledby</code> attribute. The <code>aria-labelledby</code> attribute has a value of <code>ch01</code>, which points to the <code>h1</code> element or &ldquo;Chapter One&rdquo;.</p>
-
-<div class="code-annotated "><code>
-&lt;section role=&#34;chapter&#34; <span class='highlight'>aria-labelledby=&#34;ch01&#34;</span>&gt;
-   &lt;h1 <span class='highlight'>id=&#34;ch01&#34;</span>&gt;Chapter One&lt;/h1&gt;
+  <div id="js-expandable-6558b267bcbc6fa29456c7b492f205cb" hidden>
+    <div class="code-annotated "><code>
+&lt;section epub:type=&#34;chapter&#34; <span class='highlight'>role=&#34;doc-chapter&#34;</span>&gt;
+   &lt;h1&gt;Chapter One&lt;/h1&gt;
    …
 &lt;/section&gt;
 </code></div>
