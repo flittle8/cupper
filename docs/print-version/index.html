@@ -1710,7 +1710,7 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
     <h2>
   
     <button aria-expanded="false" data-expands="js-expandable-083e98c752615bd3ab2ea824688db943">
-      <span class="expandable-label">Example 1: Identify a bibliography</span>
+      <span class="expandable-label">Example</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
           <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
@@ -1733,9 +1733,9 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
 </div>
 
 
-<h3 id="identify-the-cover-frontmatter-bodymatter-and-rearmatter">Identify the cover, frontmatter, bodymatter, and rearmatter</h3>
+<h3 id="identify-the-cover-frontmatter-bodymatter-and-backmatter">Identify the cover, frontmatter, bodymatter, and backmatter</h3>
 
-<p>There are four <code>epub:type</code> values, known as &ldquo;document partitions&rdquo;, that you need to be sure to identify in the book. These are the <code>cover</code>, <code>frontmatter</code>, <code>bodymatter</code>, and <code>rearmatter</code>. These should be used only once in the book to define the cover, the start of the frontmatter, the start of the bodymatter, and the start of the rearmatter.</p>
+<p>There are four <code>epub:type</code> values, known as &ldquo;document partitions&rdquo;, that you need to be sure to identify in the book. These are the <code>cover</code>, <code>frontmatter</code>, <code>bodymatter</code>, and <code>backmatter</code>. These should be used only once in the book to define the cover, the start of the frontmatter, the start of the bodymatter, and the start of the backmatter.</p>
 
 <p>These sections will be referenced in the <a class="pattern-link" href="https://flittle8.github.io/cupper/patterns/structure-and-semantics/landmarks/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Landmarks</a>.</p>
 
@@ -1743,8 +1743,8 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
   
     <h2>
   
-    <button aria-expanded="false" data-expands="js-expandable-d41d8cd98f00b204e9800998ecf8427e">
-      <span class="expandable-label">Example 1: Identify bodymatter</span>
+    <button aria-expanded="false" data-expands="js-expandable-455734b3795b93cde434e2875bf40e1d">
+      <span class="expandable-label">Example 1: Identify cover</span>
       <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
         <g transform="translate(0 -981.5)">
           <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
@@ -1755,8 +1755,123 @@ Looking at the <code>h1</code>, we can see that we&rsquo;re on the page for chap
   
     </h2>
   
-  <div id="js-expandable-d41d8cd98f00b204e9800998ecf8427e" hidden>
-    
+  <div id="js-expandable-455734b3795b93cde434e2875bf40e1d" hidden>
+    <p>The cover page is usually the first xhtml file in the book and is usually an image of the book cover. You&rsquo;ll need to identify this point in the book by applying the <code>epub:type=&quot;cover&quot;</code> as well as the ARIA <code>role=doc-cover</code> to the <code>section</code> element.</p>
+
+<div class="code-annotated "><code>
+&lt;body&gt;
+&lt;section <span class='highlight'>epub:type=&#34;cover&#34;</span> role=&#34;doc-cover&#34;&gt;
+&lt;img alt=&#34;cover image&#34; class=&#34;squeeze-epub&#34; src=&#34;../Images/Saun_9780735273115_epub3_cvi_r1.jpg&#34; style=&#34;width:100%;&#34;/&gt;
+<span class='highlight'>&lt;/section&gt;</span>
+&lt;/body&gt;
+</code></div>
+
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-9d22500dbb3f707beecb63a4201def87">
+      <span class="expandable-label">Example 2: Identify frontmatter</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-9d22500dbb3f707beecb63a4201def87" hidden>
+    <p>Frontmatter is preliminary material to the main content of a book, such as the table of contents, dedicate, title page, copyright page, acknowledgments, etc.</p>
+
+<p>The frontmatter of the book starts after the cover page. You need to identify the start of this frontmatter by applying the <code>epub:type=&quot;frontmatter&quot;</code> to the appropriate <code>section</code> element. This <code>section</code> element may have another attribute or value applied to it.</p>
+
+<div class="code-annotated "><code>
+&lt;body&gt;
+&lt;section <span class='highlight'>epub:type=&#34;frontmatter&#34;</span> aria-labelledby=&#34;alsoby&#34;&gt;
+&lt;h1 id=&#34;alsoby&#34;&gt;Also by Doug Saunders&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Arrival City&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Myth of the Muslim Tide&lt;/em&gt;&lt;/p&gt;
+<span class='highlight'>&lt;/section&gt;</span>
+&lt;/body&gt;
+</code></div>
+
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-b5aa3d6cc9e8306acc91a3625f6d53b8">
+      <span class="expandable-label">Example 3: Identify bodymatter</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-b5aa3d6cc9e8306acc91a3625f6d53b8" hidden>
+    <p>Bodymatter is the main content of a book. It includes sections such as a foreword, preface, prologue, introduction, epigraph, chapters, conclusion, etc.</p>
+
+<p>You need to identify the start of this bodymatter by applying the <code>epub:type=&quot;bodymatter&quot;</code> to the appropriate <code>section</code> element. This <code>section</code> element may have another attribute or value applied to it.</p>
+
+<p>In the below example, the <code>epub:type=&quot;part&quot;</code> and the ARIA ```role=&ldquo;doc-part&rdquo; also identify this section.</p>
+
+<div class="code-annotated "><code>
+&lt;body&gt;
+&lt;section <span class='highlight'>epub:type=&#34;bodymatter part&#34;</span> role=&#34;doc-part&#34;&gt;
+    &lt;h1&gt;Part One: The Minimizing Impulse&lt;/h1&gt;
+<span class='highlight'>&lt;/section&gt;</span>
+&lt;/body&gt;
+</code></div>
+
+  </div>
+</div>
+
+
+<div class="expandable-section">
+  
+    <h2>
+  
+    <button aria-expanded="false" data-expands="js-expandable-6ec09d1cee7b87c4faa6cd3f252f56fe">
+      <span class="expandable-label">Example 4: Identify backmatter</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-6ec09d1cee7b87c4faa6cd3f252f56fe" hidden>
+    <p>Backmatter is ancillary material occurring after the main content of a book, such as an index, appendix, terms of use, etc.</p>
+
+<p>You need to identify the start of this backmatter by applying the <code>epub:type=&quot;backmatter&quot;</code> to the appropriate <code>section</code> element. This <code>section</code> element may have another attribute or value applied to it.</p>
+
+<p>In the below example, the <code>epub:type=&quot;bibliography&quot;</code> and the ARIA ```role=&ldquo;doc-bibliography&rdquo; also identify this section.</p>
+
+<div class="code-annotated "><code>
+&lt;body&gt;
+&lt;section <span class='highlight'>epub:type=&#34;backmatter bibliography&#34;</span> role=&#34;doc-bibliography&#34;&gt;
+&lt;h1 class=&#34;subchapter2 sans&#34; id=&#34;h1&#34;&gt;A Note on Sources&lt;/h1&gt;
+   …
+&lt;/section&gt;
+&lt;/body&gt;
+</code></div>
+
   </div>
 </div>
 

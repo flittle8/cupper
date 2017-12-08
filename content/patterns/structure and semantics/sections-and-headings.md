@@ -162,7 +162,7 @@ The ```epub:type``` attribute should be attached to the ```<section>``` element,
 
 See the [EPUB 3 Structural Semantics Vocabulary](https://idpf.github.io/epub-vocabs/structure/) for a list of values that can be used with the attribute.
 
-{{% expandable label="Example 1: Identify a bibliography" level="2" %}}
+{{% expandable label="Example" level="2" %}}
 
 {{<code>}}
 <section [[[epub:type="bibliography"]]] role="doc-bibliography">
@@ -173,13 +173,79 @@ See the [EPUB 3 Structural Semantics Vocabulary](https://idpf.github.io/epub-voc
 
 {{% /expandable %}}
 
-### Identify the cover, frontmatter, bodymatter, and rearmatter
+### Identify the cover, frontmatter, bodymatter, and backmatter
 
-There are four ```epub:type``` values, known as "document partitions", that you need to be sure to identify in the book. These are the ```cover```, ```frontmatter```, ```bodymatter```, and ```rearmatter```. These should be used only once in the book to define the cover, the start of the frontmatter, the start of the bodymatter, and the start of the rearmatter.
+There are four ```epub:type``` values, known as "document partitions", that you need to be sure to identify in the book. These are the ```cover```, ```frontmatter```, ```bodymatter```, and ```backmatter```. These should be used only once in the book to define the cover, the start of the frontmatter, the start of the bodymatter, and the start of the backmatter.
 
 These sections will be referenced in the {{% pattern "Landmarks" %}}.
 
-{{% expandable label="Example 1: Identify bodymatter" level="2" %}}
+{{% expandable label="Example 1: Identify cover" level="2" %}}
+
+The cover page is usually the first xhtml file in the book and is usually an image of the book cover. You'll need to identify this point in the book by applying the ```epub:type="cover"``` as well as the ARIA ```role=doc-cover``` to the ```section``` element.
+
+{{<code>}}
+<body>
+<section [[[epub:type="cover"]]] role="doc-cover">
+<img alt="cover image" class="squeeze-epub" src="../Images/Saun_9780735273115_epub3_cvi_r1.jpg" style="width:100%;"/>
+[[[</section>]]]
+</body>
+{{</code>}}
+
+{{% /expandable %}}
+
+{{% expandable label="Example 2: Identify frontmatter" level="2" %}}
+
+Frontmatter is preliminary material to the main content of a book, such as the table of contents, dedicate, title page, copyright page, acknowledgments, etc. 
+
+The frontmatter of the book starts after the cover page. You need to identify the start of this frontmatter by applying the ```epub:type="frontmatter"``` to the appropriate ```section``` element. This ```section``` element may have another attribute or value applied to it.
+
+{{<code>}}
+<body>
+<section [[[epub:type="frontmatter"]]] aria-labelledby="alsoby">
+<h1 id="alsoby">Also by Doug Saunders</h1>
+<p><em>Arrival City</em></p>
+<p><em>The Myth of the Muslim Tide</em></p>
+[[[</section>]]]
+</body>
+{{</code>}}
+
+{{% /expandable %}}
+
+{{% expandable label="Example 3: Identify bodymatter" level="2" %}}
+
+Bodymatter is the main content of a book. It includes sections such as a foreword, preface, prologue, introduction, epigraph, chapters, conclusion, etc. 
+
+You need to identify the start of this bodymatter by applying the ```epub:type="bodymatter"``` to the appropriate ```section``` element. This ```section``` element may have another attribute or value applied to it. 
+
+In the below example, the ```epub:type="part"``` and the ARIA ```role="doc-part" also identify this section. 
+
+{{<code>}}
+<body>
+<section [[[epub:type="bodymatter part"]]] role="doc-part">
+	<h1>Part One: The Minimizing Impulse</h1>
+[[[</section>]]]
+</body>
+{{</code>}}
+
+{{% /expandable %}}
+
+{{% expandable label="Example 4: Identify backmatter" level="2" %}}
+
+Backmatter is ancillary material occurring after the main content of a book, such as an index, appendix, terms of use, etc.
+
+You need to identify the start of this backmatter by applying the ```epub:type="backmatter"``` to the appropriate ```section``` element. This ```section``` element may have another attribute or value applied to it. 
+
+In the below example, the ```epub:type="bibliography"``` and the ARIA ```role="doc-bibliography" also identify this section. 
+
+{{<code>}}
+<body>
+<section [[[epub:type="backmatter bibliography"]]] role="doc-bibliography">
+<h1 class="subchapter2 sans" id="h1">A Note on Sources</h1>
+   …
+</section>
+</body>
+{{</code>}}
+
 {{% /expandable %}}
 
 ## References
